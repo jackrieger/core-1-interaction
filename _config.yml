@@ -15,12 +15,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jackrieger
 
 # TODO: this is not working
-# defaults:
-#   -
-#     scope:
-#       path: "" # an empty string here means all files in the project
-#     values:
-#       layout: "default"
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
 # Build settings
 # plugins:

@@ -6,13 +6,13 @@
     <!-- <meta name="description" content=""> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
   </head>
 
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/sessions">Sessions</a>
+      <a href="/sessions/index.html">Sessions</a>
       <a href="/project">Project</a>
       <a href="/library">Library</a>
       <a href="/references">References</a>
@@ -22,9 +22,6 @@
     <section>
       {{ content }}
     </section>
-    <footer>
-      &copy; to me
-    </footer>
   </body>
 
 </html>
