@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <!-- <meta name="description" content=""> -->
@@ -8,21 +7,19 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
   </head>
-
   <body>
     <nav>
-      <a href="/">Home</a>
-      <a href="/sessions/index.html">Sessions</a>
-      <a href="/project">Project</a>
-      <a href="/library">Library</a>
-      <a href="/references">References</a>
-      <a href="/students">Students</a>
-      <a href="/colophon">Colophon</a>
+      <a href="{{ site.baseurl }}">Home</a>
+      <a href="{{ site.baseurl }}/sessions">Sessions</a>
+      <a href="{{ site.baseurl }}/project">Project</a>
+      <a href="{{ site.baseurl }}/library">Library</a>
+      <a href="{{ site.baseurl }}/references">References</a>
+      <a href="{{ site.baseurl }}/students">Students</a>
+      <a href="{{ site.baseurl }}/colophon">Colophon</a>
     </nav>
     <h1>{{ page.title }}</h1>
     <section>
       {{ content }}
     </section>
   </body>
-
 </html>
