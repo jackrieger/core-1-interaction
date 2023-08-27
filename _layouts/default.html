@@ -9,18 +9,29 @@
   </head>
   <body>
     <nav>
-      <a href="{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.baseurl }}/sessions">Sessions</a>
-      <a href="{{ site.baseurl }}/lectures">Lectures</a>
-      <a href="{{ site.baseurl }}/project">Project</a>
-      <a href="{{ site.baseurl }}/library">Library</a>
-      <a href="{{ site.baseurl }}/references">References</a>
-      <a href="{{ site.baseurl }}/students">Students</a>
-      <a href="{{ site.baseurl }}/colophon">Colophon</a>
+      <div class="nav__masthead">
+        <span class="nav__title">{{ site.title }}</span>
+        <span class="nav__date">Fall 2023</span>
+      </div>
+      <div class="nav__links">
+        <a class="nav__link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+        <a class="nav__link {% if page.url == '/sessions/' %}active{% endif %}"
+          href="{{ site.baseurl }}/sessions">Sessions</a>
+        <a class="nav__link {% if page.url == '/lectures/' %}active{% endif %}"
+          href="{{ site.baseurl }}/lectures">Lectures</a>
+        <a class="nav__link {% if page.url == '/project/' %}active{% endif %}" href="{{ site.baseurl }}/project">Project</a>
+        <a class="nav__link {% if page.url == '/library/' %}active{% endif %}" href="{{ site.baseurl }}/library">Library</a>
+        <a class="nav__link {% if page.url == '/references/' %}active{% endif %}"
+          href="{{ site.baseurl }}/references">References</a>
+        <a class="nav__link {% if page.url == '/students/' %}active{% endif %}"
+          href="{{ site.baseurl }}/students">Students</a>
+        <a class="nav__link {% if page.url == '/colophon/' %}active{% endif %}"
+          href="{{ site.baseurl }}/colophon">Colophon</a>
+      </div>
     </nav>
-    <h1>{{ page.title }}</h1>
-    <section>
+    <main class="main">
+      <h1>{{ page.title }}</h1>
       {{ content }}
-    </section>
+    </main>
   </body>
 </html>

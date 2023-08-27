@@ -2,9 +2,8 @@
 title: Sessions
 ---
 
-[8/29/23](1.html)
-
 # Unit 1
+
 ## Week 1-4: Working Methods and Web Typography
 
 The first segment of Core Interaction will focus on the tools and concepts required for building interactive experiences. We’ll use the languages of the web because they’re accessible and immediately open up new modes of communication for designers, but the concepts will be transferable to any screen-based or interactive media.
@@ -18,6 +17,8 @@ In weeks 1-4 we will focus on:
 - Figma (components, prototyping, grids, canvas sizing)
 - Putting a website online (hosting, Github, custom domains)
 - Connecting to other web services
+
+[Session 1: 8/29/23](1.html)
 
 <!--
 Unit 2: Week 5-8: Digital Canvas
