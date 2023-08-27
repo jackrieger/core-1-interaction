@@ -1,0 +1,36 @@
+<figure markdown="0"
+	{%- if include.class %} class="{{ include.class }}"{% endif -%}
+	{%- if include.style %} style="{{ include.style }}"{% endif -%}
+	{%- if include.rows %} rows="{{ include.rows }}"{% endif -%}
+	{%- if include.width or include.height or include.aspect-ratio %}
+		style="
+			{%- if include.width %}--width--max: {{ include.width }}{% endif -%}
+			{%- if include.height %}--height--max: {{ include.height }}{% endif -%}
+			{%- if include.aspect-ratio %}--aspect--ratio: {{ include.aspect-ratio }}{% endif -%}
+			"
+	{% endif -%}
+	>
+	{% if include.src contains 'jpg' or include.src contains 'png' or include.src contains 'gif' or include.src contains 'svg' %}
+		<img src="{{ include.src }}">
+	{% else %}
+		<div
+			{%- if include.src contains 'drive.google.com' %} class="google"{% endif -%}
+			{%- if include.src contains '/example/' %} class="example"{% endif -%}
+			>
+			<iframe allowfullscreen src="{{ include.src }}"></iframe>
+		</div>
+		{% if include.src contains 'drive.google.com' %}<aside></aside>{% endif %}
+	{% endif %}
+	{% if include.caption or include.credit %}
+		<figcaption>
+			{%- if include.caption -%}
+				{{- include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip -}}
+			{%- endif -%}
+			{%- if include.credit -%}
+				<cite>
+					<a href="{{ include.credit}}"></a>
+				</cite>
+			{%- endif -%}
+		</figcaption>
+	{% endif %}
+</figure>
