@@ -2,6 +2,8 @@
 title: Everything is a web page
 ---
 
+<cite>This lecture was written by [Michael Fehrenbach](https://michaelfehrenbach.com/), a fellow teacher here at Parsons.</cite>
+
 ## Let’s start with *the internet*
 
 ### When was the *internet* invented?
