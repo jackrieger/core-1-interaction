@@ -5,32 +5,59 @@
     <!-- <meta name="description" content=""> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/reset.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/nav.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   </head>
   <body>
-    <nav>
-      <div class="nav__masthead">
-        <span class="nav__title">{{ site.title }}</span>
-        <span class="nav__date">Fall 2023</span>
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__link-span {% if page.url == '/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/">
+            Core 1: Interaction
+          </a>
+        </span>
       </div>
-      <div class="nav__links">
-        <a class="nav__link {% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-        <a class="nav__link {% if page.url == '/sessions/' %}active{% endif %}"
-          href="{{ site.baseurl }}/sessions">Sessions</a>
-        <a class="nav__link {% if page.url == '/lectures/' %}active{% endif %}"
-          href="{{ site.baseurl }}/lectures">Lectures</a>
-        <a class="nav__link {% if page.url == '/project/' %}active{% endif %}" href="{{ site.baseurl }}/project">Project</a>
-        <a class="nav__link {% if page.url == '/library/' %}active{% endif %}" href="{{ site.baseurl }}/library">Library</a>
-        <a class="nav__link {% if page.url == '/references/' %}active{% endif %}"
-          href="{{ site.baseurl }}/references">References</a>
-        <a class="nav__link {% if page.url == '/students/' %}active{% endif %}"
-          href="{{ site.baseurl }}/students">Students</a>
-        <a class="nav__link {% if page.url == '/colophon/' %}active{% endif %}"
-          href="{{ site.baseurl }}/colophon">Colophon</a>
+      <div class="nav__right">
+        <span class="nav__link-span {% if page.url == '/sessions/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/sessions">
+            Sessions
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.path contains 'lectures' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/lectures">
+            Lectures
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.url == '/project/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/project">
+            Project
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.url == '/library/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/library">
+            Library
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.url == '/references/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/references">
+            References
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.url == '/students/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/students">
+            Students
+          </a>
+        </span>
+        <span class="nav__link-span {% if page.url == '/colophon/' %}active{% endif %}">
+          <a class="nav__link" href="{{ site.baseurl }}/colophon">
+            Colophon
+          </a>
+        </span>
       </div>
     </nav>
     <main class="main">
-      <h1>{{ page.title }}</h1>
       {{ content }}
     </main>
   </body>
