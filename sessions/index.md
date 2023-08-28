@@ -2,6 +2,11 @@
 title: Sessions
 ---
 
+## Week 1-4: Working Methods and Web Typography
+
+[Session 1: 8/29/23](1.html)
+
+<!--
 # Unit 1
 
 ## Week 1-4: Working Methods and Web Typography
@@ -18,9 +23,6 @@ In weeks 1-4 we will focus on:
 - Putting a website online (hosting, Github, custom domains)
 - Connecting to other web services
 
-[Session 1: 8/29/23](1.html)
-
-<!--
 Unit 2: Week 5-8: Digital Canvas
 In our second segment, we’ll investigate how designing for the digital canvas differs from other media. We will aim to understand the inherent complexities and how to use them to create compelling digital experiences.
 
