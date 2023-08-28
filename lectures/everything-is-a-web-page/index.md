@@ -2,7 +2,9 @@
 title: Everything is a web page
 ---
 
-<cite>This lecture was written by [Michael Fehrenbach](https://michaelfehrenbach.com/), a fellow teacher here at Parsons.</cite>
+by [Michael Fehrenbach](https://michaelfehrenbach.com/)
+
+---
 
 ## Let’s start with *the internet*
 

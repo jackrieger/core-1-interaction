@@ -13,24 +13,6 @@ Academic Entrance 63 Fifth Ave, Room 502
 Contact:<br>
 riegerj@newschool.edu
 
----
-
-# Unit 1
-
-## Week 1-4: Working Methods and Web Typography
-
-The first segment of Core Interaction will focus on the tools and concepts required for building interactive experiences. We’ll use the languages of the web because they’re accessible and immediately open up new modes of communication for designers, but the concepts will be transferable to any screen-based or interactive media.
-
-In weeks 1-4 we will focus on:
-
-- File management (naming, organization, file paths)
-- Setting up and starting a new project
-- Tools (code editor, inspector, git/github)
-- HTML/CSS basic concepts and syntax
-- Figma (components, prototyping, grids, canvas sizing)
-- Putting a website online (hosting, Github, custom domains)
-- Connecting to other web services
-
 <!--
 # Unit 1
 

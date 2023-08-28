@@ -12,21 +12,3 @@ body {
   font-family: arial, sans-serif;
   margin: 0;
 }
-
-a {
-  border-bottom: solid 1px currentcolor;
-  color: blue;
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: none;
-  }
-
-  &:visited {
-    color: blue;
-  }
-}
-
-img {
-  max-width: 100%;
-}
