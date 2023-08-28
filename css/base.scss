@@ -4,7 +4,7 @@
 html {
   --black: #000000;
   --gray: #dddddd;
-  --white: #e6dfd1; // Farrow & Ball Schoolhouse White
+  --white: #f4ecdd;
 }
 
 body {
@@ -14,8 +14,8 @@ body {
 }
 
 a {
-  border-bottom: solid 1px var(--black);
-  color: inherit;
+  border-bottom: solid 1px currentcolor;
+  color: blue;
   text-decoration: none;
 
   &:hover {
@@ -23,7 +23,7 @@ a {
   }
 
   &:visited {
-    color: inherit;
+    color: blue;
   }
 }
 
