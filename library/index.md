@@ -8,4 +8,4 @@ title: Library
 
 ## Documents 📄
 
-[Syllabus]({{ site.baseurl }}/files/syllabus_pucd2035_fall_2023.pdf)
+[Syllabus]({{ site.baseurl }}/files/PUCD_2035_H_RIEGER_F23.pdf)
