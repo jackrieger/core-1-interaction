@@ -2,4 +2,6 @@
 title: Lectures
 ---
 
-[Everything is a web page](everything-is-a-web-page) – Michael Fehrenbach
+|  | author | with |
+| [Everything is a web page](everything-is-a-web-page) | Michael Fehrenbach | |
+| [Intro to HTML](intro-to-html) | Michael Fehrenbach | Laurel Schwulst, Sasha Portis |
