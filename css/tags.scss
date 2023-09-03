@@ -27,16 +27,6 @@ cite {
   margin-top: -1rem;
 }
 
-code {
-  background-color: #ddd;
-  border-radius: 0.25em;
-  display: inline-block;
-  font-size: 0.75em;
-  font-family: menlo, monospace;
-  padding: 0.25em;
-  margin-bottom: 0.1em;
-}
-
 details {
   border: dotted 2px var(--black);
   padding: 0.5em;
@@ -97,13 +87,6 @@ li {
 p {
   margin-bottom: 1rem;
   margin-top: 1rem;
-}
-
-pre {
-  code {
-    display: block;
-    padding: 1em;
-  }
 }
 
 table {
