@@ -4,7 +4,8 @@ title: Library
 
 ## Readings 📚
 
-[What is Code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) – Paul Ford
+[What is Code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) – Paul Ford \
+[Making Space in Online Archives](http://distributedweb.care/posts/online-achives/) – Mindy Seu
 
 ## Documents 📄
 

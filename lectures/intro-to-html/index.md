@@ -227,6 +227,143 @@ All HTML elements can have [attributes](https://developer.mozilla.org/en-US/docs
 ```
 
 
+## Block elements
+
+[Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) always start on a new line, and take up the full width available—stretching out to the left and right of their parent/container. They stack on top of each other. Importantly, block elements can have a top and bottom margin, unlike inline elements.
+
+Earlier, we talked about area-defining elements. All of these area-defining elements are also block elements:
+
+`<header>` `<footer>` `<nav>` `<main>` `<section>` `<div>`
+
+The heading elements (`<h1>`, etc.), and `<p>` tags are also block-level.
+
+All of the above, in typical use:
+
+```html
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Block elements</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a designer currently studying at Parsons.</p>
+    </section>
+
+    <footer>
+      <a href="https://my-instagram-link">Instagram</a>
+      <a href="/contact">Contact Me</a>
+    </footer>
+
+  </body>
+
+</html>
+```
+
+{% include figure.html src="block-level.png" caption="As said earlier in the lecture, HTML is the skeleton and content of a page. It won't look like much without CSS." %}
+
+
+## Inline elements
+
+[Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) do *not* start on a new line, and only take up as much width as necessary. I like to think of these as the little metal slugs [from printing](https://en.wikipedia.org/wiki/Slug_(typesetting)). Other text and inline elements will continue to flow around them, and they can wrap to new lines:
+
+`<a>` `<em>` `<img>` `<span>`
+
+Inline elements often exist within block elements:
+
+```html
+<p>
+  This is a <a href="https://www.example.com">link</a> to an <em>important</em> website.
+</p>
+<div>
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg" alt="Example Image">
+</div>
+<p>
+  This is a <em>styled</em> <span class="blue-text">test</span> element.
+</p>
+```
+
+{% include figure.html src="inline.png" %}
+
+`<span>` will need a class and some CSS to do something visible. By default, they don't do anything special. The class name here implies that the CSS would make the word "test" blue.
+
+`<img>` is a weird one to be in this list. Typically `<img>` are modified to be block-level through CSS.
+
+## Lists
+
+Any time you have more than two of something, you probably have [a list](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#lists). These are commonly used for semantic navigation elements, as well, think *“here’s a list of links in this site.”*
+
+`<ul>` means "unordered list" whereas `<ol>` means "ordered list". Both types of list have `<li>` or "list item" within them:
+
+```html
+<ul>
+  <li>No</li>
+  <li>Particular</li>
+  <li>Order</li>
+</ul>
+
+<ol>
+  <li>Do the first thing</li>
+  <li>Here's the second thing</li>
+  <li>Finish with the third thing</li>
+</ol>
+```
+
+<ul>
+  <li>No</li>
+  <li>Particular</li>
+  <li>Order</li>
+</ul>
+
+<ol>
+  <li>Do the first thing</li>
+  <li>Here's the second thing</li>
+  <li>Finish with the third thing</li>
+</ol>
+
+
+## Details / Summary
+
+There is even some basic interactivity (way, way ahead of JavaScript) with [*details disclosure*](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) elements that open and close. This style of UI element is commonly known as an [accordion](https://semantic-ui.com/modules/accordion.html).
+
+```html
+<details>
+  <summary>
+    The `summary` tag appears like a title for the accordion. Click to open!
+  </summary>
+
+  <p>Here is the content inside the accordion.</p>
+</details>
+```
+<p>
+  <details>
+    <summary>
+      The `summary` tag appears like a title for the accordion. Click to open!
+    </summary>
+
+    <p>Here is the content inside the accordion.</p>
+  </details>
+</p>
+
+
+## So many elements!
+
+Again, there are [many, many, many, many HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Try and find the one that best fits your usage, wherever possible using a *semantic* element that fits your content.
+
+
 ## Case, whitespace, tabs, line breaks
 
 HTML doesn’t care about capitalization, extra white space, or line breaks. The browser will just read everything from left to right, as if it is one long, running sentence. So the shouty `<HTML>` and quieter `<html>` are interpreted the same.
@@ -257,87 +394,21 @@ But obviously, the first one is much more readable to us humans. We can use whit
 <cite>[Guido van Rossum](https://peps.python.org/pep-0008/)</cite>
 
 
-## Block elements
-
-[Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) always start on a new line, and take up the full width available—stretching out to the left and right of their parent/container. They stack on top of each other. Importantly, block elements can have a top and bottom margin, unlike inline elements.
-
-Earlier, we talked about area-defining elements. All of these area-defining elements are also block elements:
-
-```html
-<header> <footer> <nav> <main> <section> <div>
-```
-
-The heading elements (`<h1>`, etc.), and `<p>` tags are also block-level.
-
-All of the above, in typical use:
-
-```html
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <title>Block elements</title>
-  </head>
-
-  <body>
-
-    <header>
-      <h1>My Website</h1>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a designer currently studying at Parsons.</p>
-    </section>
-
-    <footer>
-      <a href="https://my-instagram-link">Instagram</a>
-      <a href="/contact">Contact Me</a>
-    </footer>
-
-  </body>
-
-</html>
-```
-
-{% include figure.html src="block-level.png" caption="As said earlier in the lecture, HTML is the skeleton and content of a page. It won't look like much without CSS." %}
-
-## Inline elements
-
-[Inline elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) do *not* start on a new line, and only take up as much width as necessary. I like to think of these as the little metal slugs [from printing](https://en.wikipedia.org/wiki/Slug_(typesetting)). Other text and inline elements will continue to flow around them, and they can wrap to new lines:
-
-`<a>`
-`<em>`
-`<img>`
-`<span>`
-
-{% include figure.html src='/example/inline/demo' height='32rem' %}
-
-`<img>` is a weird one here. Typically `<img>`s are modified to be block-level through CSS.
-
-
-## Lists
-
-Any time you have more than two of something, you probably have [a list](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#lists). These are commonly used for semantic navigation elements, as well, think *“here’s a list of links in this site.”*
-
-
-## Details / Summary
-
-There is even some basic interactivity (way, way ahead of JavaScript) with [*details disclosure*](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) elements that open and close.
-
-Again, there are [many, many, many, many HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). Try and find the one that best fits your usage, wherever possible using a *semantic* element that fits your content.
-
-
 ## Comments
 
-You can *comment* part of the code and the browser won’t show it. [Comments](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_comments) are often used to explain your thinking, organize your code, “turn off” a bit of code, or hide whatever you’d like.
+You can *comment* part of the code and the browser won’t show it. [Comments](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#html_comments) are often used to explain your thinking, organize your code, “turn off” a bit of code, or hide whatever you’d like:
 
-{% include figure.html src='/example/comment/demo' caption='Keep in mind these are still readable in the *source*.' height='25.4rem' %}
+```html
+<!-- this is a comment in HTML that will not appear on the page -->
+
+<!--
+  You can also make
+  a multi-line comment
+  like this.
+  -->
+```
+
+Keep in mind comments are still readable in your source code, so don't put any secrets in there. Nearly every programming language allows comments.
 
 I highly recommend getting into a habit of commenting your code, especially when starting out. If you figure something tricky out, write down why and how you solved it to help you understand and remember. And you’ll often come back to things. Commenting your code is a gift to your future self!
 
@@ -345,9 +416,3 @@ I highly recommend getting into a habit of commenting your code, especially whe
 ## *User-agent* styles
 
 We haven’t applied any styles/CSS here yet, so everything we see in these examples is based on [*user-agent* stylesheets](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade#user-agent_stylesheets)—that is, each browser’s own default display (and behavior) for an element type. This is what the web was, before CSS! But as a designer, rarely what you want. We’ll get into writing our own styles in the coming weeks.
-
-> 3.2. Priority of Constituencies
->
-> In case of conflict, consider users over authors over implementors over specifiers over theoretical purity. In other words costs or difficulties to the user should be given more weight than costs to authors; which in turn should be given more weight than costs to implementors; which should be given more weight than costs to authors of the spec itself, which should be given more weight than those proposing changes for theoretical reasons alone. Of course, it is preferred to make things better for multiple constituencies at once.
-
-<cite>[W3C, HTML Design Principles](https://www.w3.org/TR/html-design-principles/#priority-of-constituencies)</cite>

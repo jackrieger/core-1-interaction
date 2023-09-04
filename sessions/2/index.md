@@ -19,6 +19,8 @@ Let's present our ideas for the theme of our harmonic collection, and show off t
 
 We're going to pick up where we left off with getting a repository up on GitHub, though we will not be using the Terminal. This repository will be where your Harmonic Collection lives and is made available on the internet.
 
+{% capture details %}
+
 Using GitHub Desktop, do the following:
 
 - sign in with your GitHub account
@@ -60,12 +62,26 @@ First, we initialized a repository from GitHub Desktop. A repository is a storag
 
 There are two versions of your repository talking to one another, your local and your remote. The local repository is the version of the code stored on your computer, while the remote repository is the version stored elsewhere (GitHub, in our case).
 
+{% endcapture %}
+
+{% include details.html summary="How to create and upload your repo using GitHub Desktop" content=details %}
+
 # Break (~10 min)
 
-# Lecture: What is HTML?
+# Lecture: Intro to HTML
 
+We will now go over the [fundamentals of HTML]({{ site.baseurl }}/lectures/intro-to-html).
 
-
-# Live coding
 # For next class
+
+- Based on the feedback you received in class, move forward with one direction. Using HTML only, create the first entry that responds to your collection. Explore the concept through typographic or interface supporting HTML elements (no images, videos, or sounds for this entry). Think through the hierarchy of your entry:
+  - What is the most important piece of information?
+  - How will you define that — with spacing, alignment, scale?
+  - Is everything of equal hierarchy?
+  - Be prepared to explain how hierarchy impacted your design decisions.
+
+- Submit the `index.html` file on Canvas, and push it to your remote repository on GitHub.
+
+- Reading: [Making Space in Online Archives](http://distributedweb.care/posts/online-achives/) – Mindy Seu (read up until the Q&A, read more if you want)
+
 # References
