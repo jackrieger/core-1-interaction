@@ -2,7 +2,7 @@
 title: Session 2
 ---
 
-# Group discussion
+## Group discussion
 
 Get into groups of four, with a group that is different from the one you had last week. Discuss the following from the reading:
 
@@ -11,11 +11,17 @@ Get into groups of four, with a group that is different from the one you had las
 
 After 10 minutes, we will discuss the questions you have about the reading as a group.
 
-# Presentations
+## Lecture: Intro to HTML
+
+We will now go over the [fundamentals of HTML]({{ site.baseurl }}/lectures/intro-to-html).
+
+## Break (~10 min)
+
+## Presentations
 
 Let's present our ideas for the theme of our harmonic collection, and show off the one project that you’re proud of / represents yourself as a designer. Each person will have 5 minutes.
 
-# Git config
+## Git config
 
 We're going to pick up where we left off with getting a repository up on GitHub, though we will not be using the Terminal. This repository will be where your Harmonic Collection lives and is made available on the internet.
 
@@ -66,13 +72,7 @@ There are two versions of your repository talking to one another, your local and
 
 {% include details.html summary="How to create and upload your repo using GitHub Desktop" content=details %}
 
-# Break (~10 min)
-
-# Lecture: Intro to HTML
-
-We will now go over the [fundamentals of HTML]({{ site.baseurl }}/lectures/intro-to-html).
-
-# For next class
+## For next class
 
 - Based on the feedback you received in class, move forward with one direction. Using HTML only, create the first entry that responds to your collection. Explore the concept through typographic or interface supporting HTML elements (no images, videos, or sounds for this entry). Think through the hierarchy of your entry:
   - What is the most important piece of information?
@@ -84,4 +84,4 @@ We will now go over the [fundamentals of HTML]({{ site.baseurl }}/lectures/intro
 
 - Reading: [Making Space in Online Archives](http://distributedweb.care/posts/online-achives/) – Mindy Seu (read up until the Q&A, read more if you want)
 
-# References
+## References
