@@ -26,14 +26,10 @@ By the 1960s, computers were room-sized, institutional electronic machines—use
 
 A catalyst in the formation of the internet was the Cold War. The threat of nuclear conflict spurred the US Defense Department to consider decentralized and distributed <nobr>networks—to</nobr> disseminate orders and information in the event of an attack (and ultimately, for retaliation).
 
-
-
 > It was necessary to have a strategic system that could withstand a first attack and then be able to return the favor in kind. The problem was that we didn’t have a survivable communications system, and so Soviet missiles aimed at US missiles would take out the entire telephone-communication system [...] that was highly centralized. Well, then, let’s not make it centralized. Let’s spread it out so that we can have other paths to get around the damage.
 {: .quote }
 
 <cite>[Paul Baran](https://www.vanityfair.com/news/2008/07/internet200807)</cite>
-
-
 
 {% include figure.html src='arpanet.jpg' caption='The original sketch of ARPANET.' credit='https://www.scientificamerican.com/gallery/early-sketch-of-arpanets-first-four-nodes/' %}
 
@@ -47,16 +43,11 @@ Over the following decade, [ARPANET](https://www.britannica.com/topic/ARPANET) w
 
 In 1974, Robert Kahn and Vinton Cerf (two ARPA scientists) developed the *Transmission Control Protocol* and the *Internet Protocol* (TCP/IP). By the 80s, it became the standard network communication format—and still underpins the internet we all use today.
 
-
-
 ---
-
-
 
 ## What about *the web*?
 
 ### When was the *web* invented?
-{: .four-above }
 
 {% include details.html summary='1969 or 1989?' content='1989!' class='four-below' %}
 
@@ -77,14 +68,12 @@ Their proposal had four components:
 
 {% include figure.html src='chrome.png' caption='How it looks for us, now.' credit='http://info.cern.ch/hypertext/WWW/TheProject.html' %}
 
-
 By 1991, the [first web page](http://info.cern.ch/hypertext/WWW/TheProject.html) was up and running and began to take off.
 {: .four-below }
 
 {% include figure.html src='mosaic.png' caption='Mosaic was one of the first widely-available browsers. It introduced support for images.' credit='https://en.wikipedia.org/wiki/Mosaic_(web_browser)#/media/File:NCSA_Mosaic_Browser_Screenshot.png' %}
 
 {% include figure.html src='netscape.png' caption='Netscape, the first browser that I ever used.' credit='https://commons.wikimedia.org/wiki/File:Netscape_Navigator_3_Screenshot.png' %}
-
 
 The 1990s then saw more-affordable home computers bring internet access to many more people—escaping the government (military), business, and university settings it had been siloed in before. Early web browsers like [Mosaic and Netscape](https://en.wikipedia.org/wiki/History_of_the_web_browser) (1993) helped evolve what was possible online—adding color, images, and interactivity.
 
@@ -100,23 +89,16 @@ And the web exploded from there.
 
 {% include figure.html src='facebook.png' caption='2004\. And social networks.' credit='https://www.webdesignmuseum.org/gallery/google-1998' %}
 
-
-
 > The dream behind the Web is of a common information space in which we communicate by sharing information. Its universality is essential: the fact that a hypertext link can point to anything, be it personal, local or global, be it draft or highly polished.
 {: .quote }
 
 <cite>[Tim Berners-Lee](https://www.scienceandmediamuseum.org.uk/objects-and-stories/short-history-internet)</cite>
 
-
-
 ---
-
-
 
 ## So what are *web pages*?
 
 Obviously, *this* is a web page. Think about how many other web pages you have visited in the past day. Dozens, even hundreds?
-{: .left }
 
 {% capture aside %}
 
@@ -135,8 +117,6 @@ Ultimately, a web page is a just text file on a computer. It is written in a�
 
 These all started as simple, hand-typed documents. Then as the power of computers grew, and the languages of the web evolved alongside—web pages expanded almost inconceivably in complexity and capabilities. *Cascading Style Sheets* (CSS) gave them marvelous abilities to be customized and designed. *JavaScript* (JS) gave them remarkable, newfound interactivity and function. Websites (collections of web pages) today are built on top of an incredible *stack* of technology—networks, servers, databases, libraries, browsers, devices.
 
-
-
 ## An ever-present visual medium
 
 If you’re looking at a glowing, 16:9 rectangle somewhere (and it isn’t just playing video), nowadays it is very likely a web page—built with the exact same HTML, CSS, and JS—web technologies—that are behind this page, and every other.
@@ -150,8 +130,6 @@ And in that latter role, we’ll need to learn how to swim. Our path into *desig
 
 <cite>[Steve Jobs](https://www.nytimes.com/2003/11/30/magazine/the-guts-of-a-new-machine.html)</cite>
 
-
-
 ### These days, apps are often web pages too
 
 {% include figure.html src='electron.png' caption='We’ll be using a couple of these.' %}
@@ -164,8 +142,6 @@ The core application only has to be written once, instead of rewritten for each 
 
 These mobile “apps” are all built with [React Native](https://reactnative.dev), following a similar paradigm. The app is really just a web view, and every screen within is a web page.
 
-
-
 ### It’s increasingly just JS, behind the scenes
 
 JavaScript began as a client-side (on your computer), front-end language running in the browser. But now with engines like [V8](https://v8.dev) and environments like [Node](https://nodejs.org/en/), JS has moved to server-side (on the remote computer) functionality previously dominated by scripting languages like [ASP](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjEtfa8nc31AhUomeAKHd_ABUQQFnoECE8QAQ&url=https%3A%2F%2Fdotnet.microsoft.com%2Fen-us%2Flearn%2Faspnet%2Fwhat-is-aspnet&usg=AOvVaw1D_8ap9ArdBqxmTX1ce1xL), [Perl](https://www.perl.org), [PHP](https://www.php.net), [Ruby](https://www.ruby-lang.org/en/).
@@ -176,8 +152,6 @@ This means that JavaScript doesn’t just run *in* a webpage you’re looking a
 
 This “javascript everywhere” movement means that the tendrils of the web can encompass many non-web-page uses. Maybe it is in an app, maybe a headless data API, maybe a [hardware integration](https://www.theverge.com/2022/8/18/23206110/james-webb-space-telescope-javascript-jwst-instrument-control), maybe it is even something entirely *offline*—but it is still web technologies, most of the way down.
 
-
-
 ### Even things that aren’t web pages are *web-page-like*
 
 In the coming weeks we are going to dive properly into HTML, CSS, and JS—the fabric of web pages. Let’s try and also think of these—more conceptually and semantically—as *content*, *form*, and *function*. (Or in another way, *skeleton*, *skin*, and *muscles.*)
@@ -186,11 +160,7 @@ In the coming weeks we are going to dive properly into HTML, CSS, and JS—the f
 
 With this understanding, the same model exists in nearly all software. (For example, [*Resources*, *Views*, and *States*](https://developer.apple.com/tutorials/app-dev-training/#swiftui-essentials) in Mac/iOS development, though the lines are being blurred.) So we can say that software that hasn’t yet been eaten by web technologies is often still *web-like*. And the web is likely coming for them, eventually.
 
-
-
 ---
-
-
 
 ## Our lens
 
@@ -198,13 +168,11 @@ Learning good, effective design in any medium necessitates knowing it thoroughly
 
 In your careers, the software, languages, and platforms might be different, and to some extent, are ever-changing—but the design ideas and considerations are analogous and universal. To understand design for the web is to understand interactive design. And in our lives today, to understand interactive design is to understand all design.
 
-
-
 > All I know is that if you are a fish, it is hard to describe water, much less to ask if water is necessary, ethical, and structured the way it ought to be.
 {: .quote }
 
 <cite>[Abigail Disney](https://www.theatlantic.com/ideas/archive/2021/06/abigail-disney-rich-protect-dynastic-wealth-propublica-tax/619212/)</cite>
 
-
+---
 
 *A hat-tip to friend-of-the-program [Tuan](https://tuanpham.info) on this lecture.*

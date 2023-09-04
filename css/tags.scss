@@ -16,15 +16,16 @@ a {
 }
 
 blockquote {
-  margin-bottom: 2rem;
-  margin-left: 3rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  margin-right: 7rem;
+  margin-top: 1.5rem;
 }
 
 cite {
   display: inline-block;
-  margin-left: 3rem;
-  margin-top: -1rem;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
 }
 
 details {
@@ -53,6 +54,7 @@ figure {
 }
 
 h1 {
+  margin-top: 3rem;
 
   // font-lg
   font-size: 30px;
@@ -61,11 +63,16 @@ h1 {
 }
 
 h2 {
+  margin-top: 3rem;
 
   // font-lg
   font-size: 30px;
   letter-spacing: 0.025em;
   line-height: 1.3;
+}
+
+h3 {
+  font-style: italic;
 }
 
 hr {

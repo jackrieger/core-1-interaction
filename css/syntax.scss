@@ -1,11 +1,32 @@
 ---
 ---
 
+/*
+background-color: #1e1e1e; // bkg-gray
+
+border-radius: 5px; // border-radius
+
+color: #d4d4d4; // base text color
+color: #649ad1; // blue
+color: #a7d9f9; // light blue
+color: #688855; // green
+color: #c6947c; // orange
+
+font-family: menlo, monospace; // font
+
+padding: 0.25em;
+*/
+
 /* HTML/CSS/JS only rouge declarations */
 
 /* Default text color and background color */
 .highlight,
 .highlight .w {
+  background-color: #1e1e1e; // bkg-gray
+  border-radius: 5px; // border-radius
+  color: #d4d4d4;
+  font-family: menlo, monospace; // font
+  overflow: scroll;
 }
 
 /* Keywords and related tokens */
@@ -36,10 +57,12 @@
 
 /* Function and class names */
 .highlight .na {
+  color: #a7d9f9; // light-blue
 }
 
 /* Types and type names */
 .highlight .nt {
+  color: #649ad1; // blue
 }
 
 /* Literal and variable content */
@@ -89,8 +112,64 @@
 .highlight .cpf,
 .highlight .c1,
 .highlight .cs {
+  color: #688855; // green
+}
+
+.highlight .cp {
+  color: #649ad1; // blue
 }
 
 /* Imports and includes */
 .highlight .ni {
+}
+
+.highlight .s {
+  color: #c6947c; // orange
+}
+
+/* Code syntax for items not classed specifically by rouge */
+
+code {
+  font-family: menlo, monospace; // font
+  font-size: 0.8em;
+  line-height: 1.25; // line-height
+
+}
+
+li {
+  code {
+    background-color: #1e1e1e; // bkg-gray
+    border-radius: 5px; // border-radius
+    color: #d4d4d4; // blue
+    font-family: menlo, monospace; // font
+    font-size: 0.8em;
+    line-height: 1.25; // line-height
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+  }
+}
+
+pre.highlight {
+  font-family: menlo, monospace; // font
+  line-height: 1.25; // line-height
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+p {
+  // In-paragraph code spans
+  code {
+    background-color: #1e1e1e; // bkg-gray
+    border-radius: 5px; // border-radius
+    color: #d4d4d4; // blue
+    font-family: menlo, monospace; // font
+    font-size: 0.8em;
+    line-height: 1.25; // line-height
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.25em;
+  }
 }
