@@ -2,6 +2,10 @@
 title: Session 2
 ---
 
+## Name diagram
+
+Fill in your name on this seating chart, so we can continute to learn each other's names: [https://docs.google.com/spreadsheets/d/1Hv98rNiB_ylOfD8Rx4-mTJt4r6qmWSFl1jRA2C1h1G8/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1Hv98rNiB_ylOfD8Rx4-mTJt4r6qmWSFl1jRA2C1h1G8/edit?usp=sharing).
+
 ## Group discussion
 
 Get into groups of four, with a group that is different from the one you had last week. Discuss the following from the reading:
