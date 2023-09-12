@@ -3,7 +3,7 @@ title: Intro to HTML
 ---
 
 by [Michael Fehrenbach](https://michaelfehrenbach.com/)<br>
-with [Laurel Schwulst](https://www.laurel.world/), [Sasha Portis](https://sashaportis.com/)
+with [Laurel Schwulst](https://www.laurel.world/)
 
 ---
 
@@ -16,9 +16,6 @@ HTML is the standard markup language/format for creating web pages, containing t
 
 * [Basics of HTML](https://www.youtube.com/watch?v=CkzbI1Tv_rQ) \
   *A very calming introduction by Laurel Schwulst.*
-
-* [Organizing Files for the Web](https://docs.google.com/presentation/d/101TEdtacOFZhCwebijcJaX0h1BpDwhAm2SJhE3jW89c/edit#slide=id.g331f24f572_4_0) \
-  *Sasha Portis on (web) file-naming, for when you get to saving.*
 
 HTML is the *skeleton* of the web. At its most basic it is a text file, in a folder on a computer, with a `.html` extension.
 

@@ -6,11 +6,13 @@ background-color: #1e1e1e; // bkg-gray
 
 border-radius: 5px; // border-radius
 
-color: #d4d4d4; // base text color
 color: #649ad1; // blue
-color: #a7d9f9; // light blue
 color: #688855; // green
+color: #a7d9f9; // light blue
+color: #c3ad7c; // light orange
 color: #c6947c; // orange
+color: #d4d4d4; // base text color
+color: #bacdab; // light green
 
 font-family: menlo, monospace; // font
 
@@ -44,15 +46,31 @@ padding: 0.25em;
 }
 
 /* Numbers */
-.highlight .nb {
+.highlight .nb,
+.highlight .nf {
+  color: #c6947c; // orange
+}
+
+.highlight .n {
+  color: #c6947c; // orange
+}
+
+.highlight .m {
+  color: #bacdab; // light green
 }
 
 /* Constructors */
 .highlight .nc {
+  color: #c3ad7c; // light orange
+}
+
+.highlight .nl {
+  color: #a7d9f9; // light-blue
 }
 
 /* Operators */
 .highlight .no {
+  color: #c6947c; // orange
 }
 
 /* Function and class names */
