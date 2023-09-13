@@ -36,19 +36,21 @@ Now that you know some CSS, make the second entry of your site exploring somethi
 
 Now that you have multiple entries, make sure your file structure is *exactly* like this:
 
-```
-harmonic-collection
-├── entry-1
-│   └── index.html
-└── entry-2
-    ├── index.html
-    └── style.css
-```
+{% include figure.html src='folder-structure.png' %}
 
-Submit the `index.html` file and the `style.css` file on Canvas.
+If you have images, you will use a folder called `images` within that corresponding week's entry folder:
+
+{% include figure.html src='folder-structure-images.png' %}
+
+Submit the `entry-2` folder as a `.zip` file on Canvas.
 
 In addition, find one website you really like and bring it in to class next week.
 
 Reading: [Words as Material, Nicole Fenton](https://www.nicolefenton.com/words-as-material/)
 
 ## References
+
+- [marquee tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee)
+- [ASCII text generator](https://patorjk.com/software/taag/#p=display&f=3-D&t=Type%20Something%20)
+- [Nicholas Sassoon](https://nicolassassoon.com)
+- [Unicode symbols](https://symbl.cc/en/)
