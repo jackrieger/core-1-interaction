@@ -8,4 +8,4 @@ title: Sessions
 | August 29 | [Session 1]({{ site.baseurl }}/sessions/1) | intros <br> computer setup |
 | September 5 | [Session 2]({{ site.baseurl }}/sessions/2) | HTML fundamentals |
 | September 12 | [Session 3]({{ site.baseurl }}/sessions/3) | CSS fundamentals |
-| September 19 | Session 4 | |
+| September 19 | [Session 4]({{ site.baseurl }}/sessions/4) | |
