@@ -12,7 +12,18 @@ This week I'll go over each question in-class.
 
 ## How do I debug?
 
-Let's go through the process of debugging an isssue with your code.
+Let's go through the process of debugging an issue with your code.
+
+- Validators
+  - HTML
+  - CSS
+  - JavaScript (later)
+- Beautifiers
+  - HTML
+  - CSS
+  - VS Code (format on save)
+- Stack Overflow
+- ChatGPT
 
 ## Break
 
@@ -146,7 +157,5 @@ Limitations can be very helpful in creative practice. For a challenge (optional)
 Submit your `entry-3` as a link to your GitHub site.
 
 In addition, come with three different sketches for the homepage of your collection. Use Figma to make the sketches. Try to make each sketch as different as possible.
-
-Reading: [Perspectives: Negotiating the Archive, Sue Breakell](https://www.tate.org.uk/research/tate-papers/09/perspectives-negotiating-the-archive){:target="_blank"}
 
 ## References
