@@ -23,7 +23,27 @@ Let's go through the process of debugging an issue with your code.
   - CSS
   - VS Code (format on save)
 - Stack Overflow
-- ChatGPT
+
+### Online Search
+
+Try breaking your problem into smaller steps and see if you can search for a more narrow problem. Example: instead of “Site doesn’t look right” try “CSS isn’t showing up” or “CSS isn’t loading”.
+
+### Sharing Work with me or your classmates
+
+Have a few pointed and direct questions about your project ready, and share the most recent version of your work with me.
+
+### Options for Sharing Code
+
+1. If your work is online on GitHub, send me the URL (later in the semester)
+1. Create a zip file of the project folder (the folder, index.html and assets folder should all be included).
+1. Glitch is a tool for previewing code in real time. Please create an account. You can share your work by creating a new file and saving the html in the index.html and your CSS in the “style.css” (you’ll need to adjust the path in the index.html)
+
+ChatGPT
+- Asking to clarify why code you wrote isn’t working
+- Asking to help debug a certain part of your code and receive explanations
+- Credit ChatGPT when using it in the source code (with a comment)
+- DO NOT use it to complete your project, generate ideas, or give you full on code snippets verbatim
+
 
 ## Break
 
