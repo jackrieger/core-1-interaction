@@ -139,4 +139,14 @@ There are two versions of your repository talking to one another, your local and
 
 ## For next class
 
+Make a new entry in your Harmonic Collection. You will present these again next week.
+
+Limitations can be very helpful in creative practice. For a challenge (optional), try making this week's entry without using any of the CSS properties you used last week.
+
+Submit your `entry-3` as a link to your GitHub site.
+
+In addition, come with three different sketches for the homepage of your collection. Use Figma to make the sketches. Try to make each sketch as different as possible.
+
+Reading: [Perspectives: Negotiating the Archive, Sue Breakell](https://www.tate.org.uk/research/tate-papers/09/perspectives-negotiating-the-archive){:target="_blank"}
+
 ## References

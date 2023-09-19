@@ -2,8 +2,8 @@
 Title: Session 5
 ---
 
-lecture
+entries presentations
 
-one-on-one coding questions
+css layout lecture
 
-https://veryinteractive.net/pages/coding-from-life.html
+one-on-one coding questions while people work on homepage
