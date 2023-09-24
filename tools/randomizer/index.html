@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Randomizer</title>
+  </head>
+
+  <body>
+    <h1>Selected Students:</h1>
+    <ul id="selected-students"></ul>
+
+    <script>
+      class StudentRandomizer {
+        constructor(studentPool) {
+          this.studentPool = studentPool;
+          this.selectedStudents = [];
+          this.displayElement = document.getElementById("selected-students");
+        }
+
+        resetPool() {
+          this.selectedStudents = [...this.studentPool];
+        }
+
+        selectStudents() {
+          if (this.studentPool.length === 0) {
+            // If the pool is empty, reset it
+            this.resetPool();
+          }
+
+          if (this.studentPool.length < 2) {
+            // If there are fewer than 2 students in the pool, reset it
+            this.resetPool();
+          }
+
+          // Randomly select two students
+          const randomIndex1 = Math.floor(Math.random() * this.studentPool.length);
+          const student1 = this.studentPool.splice(randomIndex1, 1)[0];
+
+          const randomIndex2 = Math.floor(Math.random() * this.studentPool.length);
+          const student2 = this.studentPool.splice(randomIndex2, 1)[0];
+
+          this.selectedStudents.push(student1, student2);
+
+          // Display the selected students on the HTML page
+          const listItem = document.createElement("li");
+          listItem.textContent = `${student1} and ${student2}`;
+          this.displayElement.appendChild(listItem);
+
+          return [student1, student2];
+        }
+      }
+
+      // Example usage:
+      const students = ["Alice", "Bob", "Charlie", "David", "Eve"];
+      const randomizer = new StudentRandomizer(students);
+
+      for (let i = 0; i < students.length; i++) {
+        const [student1, student2] = randomizer.selectStudents();
+      }
+    </script>
+  </body>
+
+</html>
