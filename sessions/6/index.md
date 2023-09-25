@@ -2,6 +2,6 @@
 Title: Session 6
 ---
 
-https://veryinteractive.net/pages/coding-from-life.html
+Git config
 
-one-on-one coding questions while people work on homepage
+Public lecture
