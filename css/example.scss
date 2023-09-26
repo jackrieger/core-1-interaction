@@ -21,9 +21,20 @@ body {
 }
 
 .code {
+  background-color: #999;
+
   .highlight {
     border-radius: unset;
-    margin-bottom: unset;
+    margin-bottom: 15px;
+  }
+
+  .language-html {
+    margin-top: 15px;
+
+    .highlight {
+      margin-bottom: unset;
+      margin-top: unset;
+    }
   }
 }
 

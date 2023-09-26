@@ -2,6 +2,6 @@
 Title: Session 6
 ---
 
-Git config
+Homepage work/git config
 
 Public lecture

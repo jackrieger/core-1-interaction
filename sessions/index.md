@@ -2,10 +2,22 @@
 title: Sessions
 ---
 
-## Week 1–4: Working Methods and Web Typography
+## Unit 2: Digital Canvas
+
+| | # | topics |
+| September 27 | [Session 5]({{ site.baseurl }}/sessions/5) | CSS layout |
+| October 3 | Session 6 | |
+| October 10 | Session 7 | |
+| October 17 | Session 8 | Midterm Review |
+
+Reading: TK
+
+## Unit 1: Working Methods and Web Typography
 
 | | # | topics |
 | August 29 | [Session 1]({{ site.baseurl }}/sessions/1) | intros <br> computer setup |
 | September 5 | [Session 2]({{ site.baseurl }}/sessions/2) | HTML fundamentals |
 | September 12 | [Session 3]({{ site.baseurl }}/sessions/3) | CSS fundamentals |
-| September 19 | [Session 4]({{ site.baseurl }}/sessions/4) | |
+| September 19 | [Session 4]({{ site.baseurl }}/sessions/4) | questions <br> debugging |
+
+Reading: [What is Code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) – Paul Ford

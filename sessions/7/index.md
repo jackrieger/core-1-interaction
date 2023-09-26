@@ -2,8 +2,9 @@
 title: Session 7
 ---
 
-https://veryinteractive.net/pages/coding-from-life.html
+We're going to talk about how layout works in CSS:
 
-show important websites
+- [Flexbox]({{ site.baseurl }}/lectures/flexbox/)
+- [Grid]({{ site.baseurl }}/lectures/grid/)
 
-website dissection activity
+We are going to talk about both Flexbox and Grid which do very similar things. I'd advise that you pick the one that makes the most sense to you, and stick with it the rest of the semester.
