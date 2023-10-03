@@ -6,7 +6,7 @@ https://veryinteractive.net/pages/coding-from-life.html
 reading discussion
 https://veryinteractive.net/pages/coding-from-life.html
 
-show important websites
+show important websites (public browsing)
 
 ---
 
