@@ -8,6 +8,12 @@ https://veryinteractive.net/pages/coding-from-life.html
 
 show important websites (public browsing)
 
+carousel
+
+bouncing ball js
+
+chris handwritten tags (earlier in semester)
+
 ---
 
 ## Activity: Website Examination
