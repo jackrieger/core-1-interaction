@@ -14,6 +14,10 @@ bouncing ball js
 
 chris handwritten tags (earlier in semester)
 
+responsiveness lecture
+
+Recreate albers/mondrian/other (or coding from life?)
+
 ---
 
 ## Activity: Website Examination
