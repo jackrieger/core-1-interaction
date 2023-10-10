@@ -27,26 +27,27 @@ layout: example
   align-items: center;
   background-color: lightpink;
   display: flex;
-  flex-direction: row; /* default setting; does not need to explicitly be set */
+  flex-direction: column;
   height: 150px;
   justify-content: space-evenly;
   margin-bottom: 25px;
 }
 
 .container-2 {
-  align-items: center;
+  align-items: end;
   background-color: lightpink;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 150px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 .container-3 {
   align-items: center;
   background-color: lightpink;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 150px;
   justify-content: space-between;
 }
@@ -56,7 +57,6 @@ layout: example
   height: 50px;
   width: 50px;
 }
-
 ```
 ```html
 {{ markup }}

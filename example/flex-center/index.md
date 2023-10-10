@@ -14,18 +14,19 @@ layout: example
 ```css
 .container-1 {
   align-items: center;
-  background-color: lightpink;
   display: flex;
-  flex-direction: row; /* default setting; does not need to explicitly be set */
-  height: 150px;
-  justify-content: space-evenly;
-  margin-bottom: 25px;
+  justify-content: center;
+
+  /* not related to flex */
+  background-color: springgreen;
+  height: 200px;
+  width: 200px;
 }
 
 .element {
-  background-color: dodgerblue;
-  height: 50px;
-  width: 50px;
+  background-color: magenta;
+  height: 100px;
+  width: 100px;
 }
 ```
 ```html

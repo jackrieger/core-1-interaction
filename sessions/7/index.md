@@ -17,6 +17,8 @@ We watched this lecture, as our reading for this week:
 - What's one thing you're curious about?
 - In your opinion, what are the biggest similarities and differences between print and digital design?
 
+Share these thoughts here: [document](https://docs.google.com/document/d/1Qh69L_0kZR0UhI0nUy3y29JznWSJC5G-7gUXooXNJd4/edit?usp=sharing)
+
 ## Lecture
 
 We're going to talk about how flex and grid layouts work in CSS:

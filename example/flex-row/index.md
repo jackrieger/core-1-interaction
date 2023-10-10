@@ -34,12 +34,13 @@ layout: example
 }
 
 .container-2 {
-  align-items: center;
+  align-items: end;
   background-color: lightpink;
   display: flex;
   flex-direction: row;
   height: 150px;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 
 .container-3 {
@@ -56,7 +57,6 @@ layout: example
   height: 50px;
   width: 50px;
 }
-
 ```
 ```html
 {{ markup }}
