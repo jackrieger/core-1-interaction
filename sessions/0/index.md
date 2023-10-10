@@ -18,6 +18,10 @@ responsiveness lecture
 
 Recreate albers/mondrian/other (or coding from life?)
 
+## A Graphic Design Reading List
+
+https://www.varvvarv.eu/a-graphic-design-reading-list
+
 ---
 
 ## Activity: Website Examination
