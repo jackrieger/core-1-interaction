@@ -57,3 +57,9 @@ For Midterms, we will have a one on one meeting. At that time, you will present 
 - Are there opportunities to establish a template or system to the design — if so, when, where, and how? Can we break the system mindfully to add interest?
 
 You will also prepare a short written doc (one paragraph) that explains your collection’s theme so far and explains three other avenues you can explore for the remaining weeks of the semester.
+
+# References
+
+- [Markdown](https://www.markdownguide.org/)
+- [The Serving Library](https://www.servinglibrary.org/)
+- [Interaction of Color](https://interactionofcolor.com/)
