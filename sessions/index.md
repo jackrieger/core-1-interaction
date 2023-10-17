@@ -8,7 +8,7 @@ title: Sessions
 | September 27 | [Session 5]({{ site.baseurl }}/sessions/5) | CSS layout |
 | October 3 | [Session 6]({{ site.baseurl }}/sessions/6) | git <br> guest lecture |
 | October 10 | [Session 7]({{ site.baseurl }}/sessions/7) | flexbox <br> grid |
-| October 17 | Session 8 | midterm review |
+| October 17 | [Session 8]({{ site.baseurl }}/sessions/8) | midterm review |
 
 Reading: [Muriel Cooper \| David Reinfurt \| Talks at Google](https://youtu.be/U_PGr5d9r7Q?si=obed38qjVAS7Mx0g)
 
