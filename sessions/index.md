@@ -2,6 +2,15 @@
 title: Sessions
 ---
 
+## Unit 3: Designing for Interaction
+
+| | # | topics |
+| October 24 | [Session 9]({{ site.baseurl }}/sessions/9) | responsiveness <br> JavaScript |
+| October 31 | [Session 6]({{ site.baseurl }}/sessions/10) |  |
+| November 7 | [Session 7]({{ site.baseurl }}/sessions/11) |  |
+
+Reading: [A Vernacular Web](https://art.teleportacia.org/observation/vernacular/) – Olia Lialina
+
 ## Unit 2: Digital Canvas
 
 | | # | topics |

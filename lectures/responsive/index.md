@@ -46,7 +46,7 @@ If you're writing stylesheets in a mobile-first manner, the base of your file wo
 
 {% include figure.html src='/example/mobile-first' height='25rem' %}
 
-## Common Screen Sizes - A Myth
+## Common Screen Sizes – A Myth
 
 You might be wondering what the most "common" screen sizes to use for breakpoints. The answer is, it depends on your design! See what happens at various screen sizes and adjust from there. Pre-plan out your breakpoints while you're designing.
 
