@@ -1,34 +1,47 @@
 ---
 ---
 
-## Net Art
-
-Net Art Anthology
-
-https://veryinteractive.net/pages/coding-from-life.html
-
-reading discussion
-https://veryinteractive.net/pages/coding-from-life.html
-
-show important websites (public browsing)
-
-carousel
-
-bouncing ball js
-
-chris handwritten tags (earlier in semester)
-
-responsiveness lecture
-
-Recreate albers/mondrian/other (or coding from life?)
-
-## A Graphic Design Reading List
-
-https://www.varvvarv.eu/a-graphic-design-reading-list
-
-P5 coding train
+Next semester
+- chris handwritten tags exercise (earlier in semester)
+- https://veryinteractive.net/pages/coding-from-life.html
 
 ---
+
+JS
+- carousel
+- bouncing ball js
+- P5 coding train
+
+Better practices
+- Use CSS grid
+- Use CSS variables
+  - mixins
+  - space variables
+  - colors
+- Componentization/templating
+  - Sharing CSS files
+  - Include header/footer with AJAX
+  ```javascript
+  fetch("./header.html")
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.querySelector("header").innerHTML = data;
+    });
+
+  fetch("./footer.html")
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.querySelector("footer").innerHTML = data;
+    });
+  ```
+
+---
+
+Whole sections
 
 ## Activity: Website Examination
 
