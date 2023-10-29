@@ -6,15 +6,15 @@ title: Session 10
 
 ## Live websites
 
-By next week you must have a GitHub Pages website with a homepage that correctly links to all of your entries. The entries must all be up-to-date. The homepage must be an `index.html` file at the root of your site. This means the URL to your site will be very clean, like this:
+By next week you must have a GitHub Pages website with a homepage that correctly links to all of your entries. The entries must all be up-to-date. I will no longer be accepting entries via file or email.
+
+The homepage must be an `index.html` file at the root of your site. This means the URL to your site will be very clean, like this:
 
 [https://jackrieger.github.io/harmonic-collection](https://jackrieger.github.io/harmonic-collection)
 
-Here is the code inside this repository, for reference. (Note that this is **not** the kind of URL I'm looking for):
+Here is the code inside this repository, for reference. (Note that this is the link to my code, not my website. This is **not** the kind of URL I'm looking for for submissions):
 
 [https://github.com/jackrieger/harmonic-collection](https://github.com/jackrieger/harmonic-collection)
-
-I will no longer be accepting entries via file or email. You must have a live site.
 
 Here are some resources for git made by other teachers of this class:
 
