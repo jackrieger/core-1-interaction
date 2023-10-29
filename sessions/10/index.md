@@ -7,6 +7,7 @@ title: Session 10
     🎃 👻 🦇 🕸️ 🕷️ 🧙‍♀️ 🧙‍♂️ 🧹 🧛‍♀️ 🧛‍♂️ 🧟‍♀️ 🧟‍♂️ 🍬 🍭 🔮 ⚰️ ⛓️ 👹 👺 💀 👽 🌕 🌑 🕯️ 🦉 🍎 🔪 🗡️
   </div>
 </div>
+
 <style>
   .marquee-container {
     overflow: hidden;
@@ -30,6 +31,7 @@ title: Session 10
     }
   }
 </style>
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const emojis = ["🎃", "👻", "🦇", "🕸️", "🕷️", "🧙‍♀️", "🧙‍♂️", "🧹", "🧛‍♀️", "🧛‍♂️", "🧟‍♀️", "🧟‍♂️", "🍬", "🍭", "🔮", "⚰️", "⛓️", "👹", "👺", "💀", "👽", "🌕", "🌑", "🕯️", "🦉", "🍎"];
@@ -85,9 +87,11 @@ Starting in 2016, the organization Rhizome began to assemble the Net Art Antholo
 
 > Devised in concert with Rhizome's acclaimed digital preservation department, Net Art Anthology aims to address the shortage of historical perspectives on a field in which even the most prominent artworks are often inaccessible. The series takes on the complex task of identifying, preserving, and presenting 100 exemplary works in a field characterized by broad participation, diverse practices, promiscuous collaboration, and rapidly shifting formal and aesthetic standards, sketching a possible net art canon.<span> — Rhizome<span>
 
-Spend 15 minutes browsing the collection and select a work you want to discuss as a group. Add it here:
+Spend 15 minutes browsing the collection and select a work you want to discuss as a group. Try to not look at the commentary from Rhizome, but instead focus on what you personally see in the work. Add it here, following the format listed at the top of the document:
 
-[Net art works]()
+[Net Art Works](https://docs.google.com/document/d/15kKUthxtmj0kBmt0FjAnJA20r5wvZXndjp6ebiqwKRo/edit?usp=sharing)
+
+## Break
 
 ## Intro to JavaScript
 

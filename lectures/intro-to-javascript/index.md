@@ -2,12 +2,16 @@
 title: Intro to JavaScript
 ---
 
-Hey
+Background
 
-Computer science
+Front-end vs back-end
+
+Computer science parallels
 
 Variables
 
-Front-end vs back-end
+Conditionals
+
+Loops
 
 Creative stuff

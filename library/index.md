@@ -5,7 +5,8 @@ title: Library
 ## Readings
 
 [What is Code?](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/) – Paul Ford \
-[Muriel Cooper \| David Reinfurt \| Talks at Google](https://youtu.be/U_PGr5d9r7Q?si=obed38qjVAS7Mx0g) – David Reinfurt
+[Muriel Cooper \| David Reinfurt \| Talks at Google](https://youtu.be/U_PGr5d9r7Q?si=obed38qjVAS7Mx0g) – David Reinfurt \
+[A Vernacular Web](https://art.teleportacia.org/observation/vernacular/) – Olia Lialina
 
 ## Documents
 
