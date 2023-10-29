@@ -20,6 +20,12 @@ blockquote {
   margin-left: 4rem;
   margin-right: 7rem;
   margin-top: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+
+  span {
+    font-style: normal;
+  }
 }
 
 cite {

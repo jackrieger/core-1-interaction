@@ -2,7 +2,51 @@
 title: Session 10
 ---
 
-![A list of every Halloween-themed emoji.](halloween-emoji.png)
+<div class="marquee-container">
+  <div class="marquee-content js-marquee">
+    🎃 👻 🦇 🕸️ 🕷️ 🧙‍♀️ 🧙‍♂️ 🧹 🧛‍♀️ 🧛‍♂️ 🧟‍♀️ 🧟‍♂️ 🍬 🍭 🔮 ⚰️ ⛓️ 👹 👺 💀 👽 🌕 🌑 🕯️ 🦉 🍎 🔪 🗡️
+  </div>
+</div>
+<style>
+  .marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .marquee-content {
+    animation: marquee 15s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const emojis = ["🎃", "👻", "🦇", "🕸️", "🕷️", "🧙‍♀️", "🧙‍♂️", "🧹", "🧛‍♀️", "🧛‍♂️", "🧟‍♀️", "🧟‍♂️", "🍬", "🍭", "🔮", "⚰️", "⛓️", "👹", "👺", "💀", "👽", "🌕", "🌑", "🕯️", "🦉", "🍎"];
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    shuffle(emojis);
+    const shuffledEmojis = emojis.join(" ");
+    const marquee = document.querySelector(".js-marquee");
+    marquee.innerHTML = shuffledEmojis + " " + shuffledEmojis;
+  });
+</script>
 
 ## Live websites
 
@@ -12,7 +56,7 @@ The homepage must be an `index.html` file at the root of your site. This means t
 
 [https://jackrieger.github.io/harmonic-collection](https://jackrieger.github.io/harmonic-collection)
 
-Here is the code inside this repository, for reference. (Note that this is the link to my code, not my website. This is **not** the kind of URL I'm looking for for submissions):
+Here is the code inside this repository, for reference. (Note that this is the link to my code, not my website. This is _not_ the kind of URL I'm looking for for submissions):
 
 [https://github.com/jackrieger/harmonic-collection](https://github.com/jackrieger/harmonic-collection)
 
@@ -33,17 +77,15 @@ I will hold office hours this Sunday. Talk to me after class if you are interest
 
 Last week we talked about more design-oriented sites. This week I want to introduce net art, if you're unfamiliar.
 
-> Net art is a form of digital art that emerged in the late 1990s, using the internet both as its canvas and its distribution platform. Encompassing a wide range of artistic practices—from interactive web experiences to social media interventions—net art challenges traditional concepts of art-making and consumption. It is inherently democratic, often inviting user participation and collaboration, while questioning the norms of the digital space it inhabits. Pioneers in the field like JODI and Neen have helped shape the language of net art, pushing the boundaries of what is considered 'art' by incorporating elements like code, interface design, and digital interactivity.
-— GPT-4
+> Net art is a form of digital art that emerged in the late 1990s, using the internet both as its canvas and its distribution platform. Encompassing a wide range of artistic practices—from interactive web experiences to social media interventions—net art challenges traditional concepts of art-making and consumption. It is inherently democratic, often inviting user participation and collaboration, while questioning the norms of the digital space it inhabits. Pioneers in the field like JODI and Neen have helped shape the language of net art, pushing the boundaries of what is considered 'art' by incorporating elements like code, interface design, and digital interactivity.<span> — GPT-4<span>
 
 Starting in 2016, the organization Rhizome began to assemble the Net Art Anthology, a collection of 100 works that exemplifies the genre:
 
 [Net Art Anthology](https://anthology.rhizome.org/)
 
-> Devised in concert with Rhizome's acclaimed digital preservation department, Net Art Anthology aims to address the shortage of historical perspectives on a field in which even the most prominent artworks are often inaccessible. The series takes on the complex task of identifying, preserving, and presenting 100 exemplary works in a field characterized by broad participation, diverse practices, promiscuous collaboration, and rapidly shifting formal and aesthetic standards, sketching a possible net art canon.
-— Rhizome
+> Devised in concert with Rhizome's acclaimed digital preservation department, Net Art Anthology aims to address the shortage of historical perspectives on a field in which even the most prominent artworks are often inaccessible. The series takes on the complex task of identifying, preserving, and presenting 100 exemplary works in a field characterized by broad participation, diverse practices, promiscuous collaboration, and rapidly shifting formal and aesthetic standards, sketching a possible net art canon.<span> — Rhizome<span>
 
-Spend 10 minutes browsing the collection and select a work you want to discuss as a group. Add it here:
+Spend 15 minutes browsing the collection and select a work you want to discuss as a group. Add it here:
 
 [Net art works]()
 
