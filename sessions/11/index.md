@@ -5,6 +5,8 @@ title: Session 11
 # Q&A
 # Presentations
 # JavaScript pt. 2
+- event listeners
+- more classlist/dom stuff
 
 # For next class
 

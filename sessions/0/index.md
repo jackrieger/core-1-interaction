@@ -4,6 +4,7 @@
 Next semester
 - chris handwritten tags exercise (earlier in semester)
 - https://veryinteractive.net/pages/coding-from-life.html
+- the class site needs to be just like the harmonic collection, not hosted on my own site
 
 ---
 

@@ -321,20 +321,16 @@ style.css
   width: 100px;
 }
 
-.red {
+.red.active {
   background-color: red;
 }
 
-.yellow {
+.yellow.active {
   background-color: yellow;
 }
 
-.green {
+.green.active {
   background-color: green;
-}
-
-.active {
-  border: 5px solid black;
 }
 ```
 
