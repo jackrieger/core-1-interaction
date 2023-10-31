@@ -75,7 +75,7 @@ Zach Scheinfeld \
 
 I will hold office hours this Sunday. Talk to me after class if you are interested, and we can find a time.
 
-## Net art
+## Net Art
 
 Last week we talked about more design-oriented sites. This week I want to introduce net art, if you're unfamiliar.
 
@@ -93,18 +93,12 @@ Spend 15 minutes browsing the collection and select a work you want to discuss a
 
 ## Break
 
-## Intro to JavaScript
-
-Last week we had a basic JavaScript demo. We will reiterate what we learned and expand on it:
+## Lecture
 
 [Intro to JavaScript]({{ site.baseurl }}/lectures/intro-to-javascript)
 
-## In-class work time
-
-If we have time left over, we will work on the next entry.
-
 ## For next class
 
-Reading
-Presentations next time
-Another entry
+Your homework is an entry that uses JavaScript in some way.
+
+We will have presentations of your sites next week! Be prepared to share.

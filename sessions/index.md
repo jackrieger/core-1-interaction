@@ -4,8 +4,8 @@ title: Sessions
 
 ## Unit 3: Designing for Interaction
 
-| October 24 | [Session 9]({{ site.baseurl }}/sessions/9) | responsiveness <br> JavaScript |
-| October 31 | [Session 10]({{ site.baseurl }}/sessions/10) |  |
+| October 24 | [Session 9]({{ site.baseurl }}/sessions/9) | responsiveness <br> JavaScript demo |
+| October 31 | [Session 10]({{ site.baseurl }}/sessions/10) | JavaScript fundamentals |
 | November 7 | [Session 11]({{ site.baseurl }}/sessions/11) |  |
 
 Reading: [A Vernacular Web](https://art.teleportacia.org/observation/vernacular/) – Olia Lialina

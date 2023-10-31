@@ -13,7 +13,7 @@ JS
 - P5 coding train
 
 Better practices
-- Use CSS grid
+- Use CSS grid (nobody really grasped the purpose of the grid lecture)
 - Use CSS variables
   - mixins
   - space variables
