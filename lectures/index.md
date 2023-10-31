@@ -2,6 +2,7 @@
 title: Lectures
 ---
 
+## HTML/CSS
 | | author |
 | [Everything is a web page](everything-is-a-web-page) | Michael Fehrenbach |
 | [Intro to HTML](intro-to-html) | Michael Fehrenbach |
@@ -9,6 +10,10 @@ title: Lectures
 | [Box model](box-model) | Michael Fehrenbach |
 | [Flexbox & grid](flexbox-and-grid) | me |
 | [Responsiveness](responsive) | me |
+
+## JavaScript
+| | author |
+| [Intro to JavaScript](intro-to-javascript) | me |
 
 ---
 

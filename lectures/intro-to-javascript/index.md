@@ -272,6 +272,48 @@ for (let i = 0; i < fruits.length; i++) {
 console.log(fruits);  // ["elppa", "ananab", "yrrehc"]
 ```
 
+## What's going on with all the `()`, `{}`, and `[]` ?
+
+A common question is when to use `()`, `{}`, or `[]`. The answer is, it depends and you'll get used to it. But here's a quick overview:
+
+```javascript
+// arrays
+myArray = [];
+
+// objects
+myObject = {};
+
+// control flow/conditionals
+if (condition) {
+
+}
+
+// loops
+for (let i = 0; i < 10; i++) {
+
+}
+
+// functions
+function myFunction(parameter) {
+
+}
+
+// function call
+myFunction();
+
+/*
+
+In general:
+
+thing () {
+
+}
+
+*/
+```
+
+This is something you'll have to learn through experience. You cannot substitute one type of brace for another.
+
 ## Document Object Model (DOM) Manipulation
 
 The Document Object Model (DOM) represents the structure of an HTML document in a web browser. JavaScript can interact with the DOM to dynamically update content, structure, and styling. This is the basis for creating interactive web applications. By using methods like `querySelector` and `classList`, you can select specific elements and manipulate their attributes, content, or styles.
@@ -297,7 +339,7 @@ fruitDisplay.textContent = randomFruit;
 
 ![Alt text](random-fruit-to-the-page.png)
 
-> Here I threw the JavaScript directly into the console and ran it. You can do that to test something out quickly!
+> Here I threw the JavaScript directly into the console and ran it. You can do that to test something out quickly! Though, there can be unexpected behavior – it's definitely not the same as running the code in your script file.
 
 Let's code a stoplight that changes periodically from red to green to yellow:
 
