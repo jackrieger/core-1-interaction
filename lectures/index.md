@@ -3,17 +3,19 @@ title: Lectures
 ---
 
 ## HTML/CSS
+
 | | author |
 | [Everything is a web page](everything-is-a-web-page) | Michael Fehrenbach |
 | [Intro to HTML](intro-to-html) | Michael Fehrenbach |
 | [Intro to CSS](intro-to-css) | Michael Fehrenbach |
 | [Box model](box-model) | Michael Fehrenbach |
-| [Flexbox & grid](flexbox-and-grid) | me |
-| [Responsiveness](responsive) | me |
+| [Flexbox & grid](flexbox-and-grid) | Me |
+| [Responsiveness](responsive) | Me |
 
 ## JavaScript
+
 | | author |
-| [Intro to JavaScript](intro-to-javascript) | me |
+| [Intro to JavaScript](intro-to-javascript) | Me |
 
 ---
 
