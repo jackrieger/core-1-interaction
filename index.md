@@ -13,6 +13,8 @@ Academic Entrance 63 Fifth Ave, Room 502
 Contact:<br>
 riegerj@newschool.edu
 
+[Syllabus]({{ site.baseurl }}/files/PUCD_2035_H_RIEGER_F23.pdf)
+
 <!--
 # Unit 1
 
