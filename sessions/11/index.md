@@ -15,6 +15,8 @@ With the time remaining, we will present our site progress and receive feedback 
 
 # For next class
 
+Another entry – focus on using more JavaScript.
+
 Reading: [A Vernacular Web](https://art.teleportacia.org/observation/vernacular/) – Olia Lialina
 
 We will discuss the reading at the beginning of next class.
