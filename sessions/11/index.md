@@ -6,7 +6,8 @@ title: Session 11
 
 This was your first official week using JavaScript! Let's do a q&a with any questions you had when doing the homework. Write a JavaScript related question here:
 
-[Questions 11/6](https://docs.google.com/document/d/101ZeUjEMklCctldc87N3OVSLXLayETpG2OQlTsqCj-g/edit?usp=sharing)
+[Questions 11/6](https://docs.google.com/document/d/101ZeUjEMklCctldc87N3OVSLXLayETpG2OQlTsqCj-g/edit?usp=sharing) \
+[Answers](https://www.dropbox.com/scl/fo/lg9hjq9svgfctdvdew6mf/h?rlkey=w0d9kzfak4968t27nervlvcd5&dl=0)
 
 # Presentations
 
