@@ -2,6 +2,8 @@
 title: Session 13
 ---
 
+# Reading discussion
+
 # JavaScript pt. 2
 - event listeners
 - more classlist/dom stuff

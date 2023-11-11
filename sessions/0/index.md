@@ -7,6 +7,7 @@ Next semester
 - the class site needs to be just like the harmonic collection, not hosted on my own site
 - responsivity needs to come very early on, if that is to be a consideration
 - give them a set of typefaces they can use and talk about digital typeface law (if you're a student, it's fine)
+- pop quizzes / how to sniff chat gpt
 
 ---
 
