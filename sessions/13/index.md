@@ -2,8 +2,8 @@
 title: Session 13
 ---
 
-# Good practices
+# Lecture - some good practices
 
-# APIs
+# Q&A coding
 
-# Office hours
+# Office hours - final prep

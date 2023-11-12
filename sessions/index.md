@@ -2,6 +2,13 @@
 title: Sessions
 ---
 
+## Unit 4: Networks
+
+| November 14 | [Session 12]({{ site.baseurl }}/sessions/12) | Libraries and APIs |
+| November 21 | [Session 13]({{ site.baseurl }}/sessions/13) | |
+| November 28 | [Session 14]({{ site.baseurl }}/sessions/14) | |
+| December 5 | [Session 15]({{ site.baseurl }}/sessions/15) | Final presentations |
+
 ## Unit 3: Designing for Interaction
 
 | October 24 | [Session 9]({{ site.baseurl }}/sessions/9) | responsiveness <br> JavaScript demo |
