@@ -96,7 +96,11 @@ There are two versions of your repository talking to one another, your local and
 
 {% endcapture %}
 
-{% include details.html summary="How to create and upload your repo using GitHub Desktop" content=details %}
+{%
+  include details.html
+  summary="How to create and upload your repo using GitHub Desktop"
+  content=details
+%}
 
 ## For next class
 

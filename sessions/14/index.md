@@ -2,4 +2,6 @@
 title: Session 14
 ---
 
-# Final prep - work in class
+# Lecture - some good practices
+# Q&A coding
+# Office hours - final prep
