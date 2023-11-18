@@ -18,7 +18,7 @@ For our context, there are four libraries that I want to highlight:
 
 [flickity.metafizzy.co](https://flickity.metafizzy.co/)
 
-Flickity is a touch-friendly, responsive carousel library. It's designed to create sliders that work well on desktop, tablets, and mobiles with easy-to-use features for scrolling through items:
+Flickity is a touch-friendly, responsive carousel library. It's designed to create sliders that work well on many devices and browsers, with easy-to-use features for scrolling through items:
 
 {%
   include figure.html
@@ -27,27 +27,55 @@ Flickity is a touch-friendly, responsive carousel library. It's designed to crea
   caption='You’ve used a ton of these throughout your digital lives.'
 %}
 
-The official starter example on [Codepen](https://codepen.io/desandro/pen/azqbop). Note that here they’re including the library from a CDN (more details on that in the [next section below](#how-to-import-a-library-into-your-project):
+The official starter example on [Codepen](https://codepen.io/desandro/pen/azqbop). Note that here they’re including the library from a CDN (more details on that in the [next section below](#how-to-import-a-library-into-your-project)):
 
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="azqbop" data-user="desandro" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="azqbop" data-user="desandro" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/desandro/pen/azqbop">
   Flickity</a> by Dave DeSandro (<a href="https://codepen.io/desandro">@desandro</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
+Note that nowadays there are plain JavaScript ways to make carousels, but at one point libraries were much more useful because browsers were way more inconsistent. Now, it’s more about saving time and not reinventing the wheel.
+
 ### p5.js
 
 [p5js.org](https://p5js.org/)
 
-TK
+p5.js is a library that brings the power and simplicity of Processing (a different programming language and environment for artists) to JavaScript, making creative coding accessible to a broader audience. So basically p5 is Processing rewritten in JavaScript. It was a landmark in the world of creative coding, and has been used to create countless interactive experiences, from generative art to data visualizations to educational tools.
 
-<!--
-p5.js is a library that brings the power and simplicity of Processing (a programming language and environment for artists) to JavaScript, making creative coding accessible to a broader audience. It is excellent for creating graphic and interactive experiences, based on the core principles of Processing.
+{%
+  include figure.html
+  src='p5-showcase.png'
+  alt='An example of p5.js.'
+  caption='Check out lots of work from their showcase: [p5.js showcase](https://showcase.p5js.org/#/).'
+%}
 
-Verbal Example:
-Let's say you want to create an educational web application that helps teach the concept of gravity. Using p5.js, you could create an interactive simulation where users can drop balls of different masses and see how they fall and bounce, visually learning about gravitational force and its effects on different objects.
--->
+There is also a YouTube series called the Coding Train, that I highly recommend for exploring p5:
+
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/biN3v3ef-Y0?si=YoIRWxrvl-J3vEOC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### D3.js
+
+[d3js.org](https://d3js.org/)
+
+D3.js is a powerful library for creating complex and dynamic data visualizations in the web browser. It uses HTML, SVG, and CSS, and gives you the tools to bind data to the DOM and apply transformations to the document based on that data.
+
+{%
+  include figure.html
+  src='d3-index.png'
+  alt='An example of D3.js.'
+  caption='Examples from [the gallery on D3’s site](https://observablehq.com/@d3/gallery?utm_source=d3js-org&utm_medium=nav&utm_campaign=try-observable)'
+%}
+
+{%
+  include figure.html
+  src='d3-electricity.png'
+  alt='An example of D3.js showing an electricity data visualization.'
+  caption='[Electricity Usage, 2019](https://observablehq.com/@mbostock/electric-usage-2019)'
+%}
+
+D3 was developed by Mike Bostock, who was at the time a graphics editor at the New York Times. He has written a lot about D3 and data visualization in general, and I highly recommend checking out his blog if you're into that kind of thing: [bost.ocks.org](https://bost.ocks.org/mike/).
 
 ### Three.js
 
@@ -60,19 +88,6 @@ Three.js is a 3D library that simplifies the process of creating 3D graphics on 
 
 Verbal Example:
 Imagine you're developing a website for a new housing development and you want to provide a virtual tour of the houses. With Three.js, you could build an interactive 3D model of a house that users can "walk through" by clicking and dragging their mouse to look around, experiencing the space as if they were there in person.
--->
-
-### D3.js
-
-[d3js.org](https://d3js.org/)
-
-TK
-
-<!--
-D3.js is a powerful library for creating complex and dynamic data visualizations in the web browser. It uses HTML, SVG, and CSS, and gives you the tools to bind data to the DOM and apply transformations to the document based on that data.
-
-Verbal Example:
-Consider a financial website that wants to display stock prices in real-time. Using D3.js, you could create a line chart that updates every few seconds, reflecting the latest prices. As new data arrives, the chart could transition smoothly, moving the existing line to the left and appending the new data to the right.
 -->
 
 ## How to import a library into your project
