@@ -29,7 +29,7 @@
             Sessions
           </a>
         </span>
-        <span class="nav__link-span {% if page.path contains 'topics' %}active{% endif %}">
+        <span class="nav__link-span {% if page.path contains 'lectures' %}active{% endif %}">
           <a class="nav__link" href="{{ site.baseurl }}/lectures">
             Lectures
           </a>
@@ -58,7 +58,6 @@
     </nav>
     <main class="main">
       <h1>{{ page.title }}</h1>
-      <hr>
       {{ content }}
     </main>
     <div class="top-button js-top-button">

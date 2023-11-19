@@ -36,13 +36,17 @@ The official starter example on [Codepen](https://codepen.io/desandro/pen/azqbop
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-Note that nowadays there are plain JavaScript ways to make carousels, but at one point libraries were much more useful because browsers were way more inconsistent. Now, it’s more about saving time and not reinventing the wheel.
+> Where's the JavaScript? They've made Flickity so that at its very base, all you need to do is include the data attribute `data-flickity` on your carousel element, and it will work right out of the box. However, you can further use JavaScript to customize the behavior in many different ways.
+
+Nowadays there are plain JavaScript ways to make carousels, but at one point libraries were useful because browsers were way more inconsistent. Now, it’s more about saving time and not reinventing the wheel.
 
 ### p5.js
 
 [p5js.org](https://p5js.org/)
 
-p5.js is a library that brings the power and simplicity of Processing (a different programming language and environment for artists) to JavaScript, making creative coding accessible to a broader audience. So basically p5 is Processing rewritten in JavaScript. It was a landmark in the world of creative coding, and has been used to create countless interactive experiences, from generative art to data visualizations to educational tools.
+p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.
+
+Using the metaphor of a sketch, p5.js has a full set of drawing functionality. However, you’re not limited to your drawing canvas. You can think of your whole browser page as your sketch, including HTML5 objects for text, input, video, webcam, and sound.
 
 {%
   include figure.html
@@ -51,7 +55,7 @@ p5.js is a library that brings the power and simplicity of Processing (a differe
   caption='Check out lots of work from their showcase: [p5.js showcase](https://showcase.p5js.org/#/).'
 %}
 
-There is also a YouTube series called the Coding Train, that I highly recommend for exploring p5:
+There is also a YouTube series called the Coding Train, that I highly recommend for exploring p5 (and creative coding in general):
 
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/biN3v3ef-Y0?si=YoIRWxrvl-J3vEOC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -59,7 +63,7 @@ There is also a YouTube series called the Coding Train, that I highly recommend 
 
 [d3js.org](https://d3js.org/)
 
-D3.js is a powerful library for creating complex and dynamic data visualizations in the web browser. It uses HTML, SVG, and CSS, and gives you the tools to bind data to the DOM and apply transformations to the document based on that data.
+D3 (or D3.js) is a free, open-source JavaScript library for visualizing data. Its low-level approach built on web standards offers unparalleled flexibility in authoring dynamic, data-driven graphics. For more than a decade D3 has powered groundbreaking and award-winning visualizations, become a foundational building block of higher-level chart libraries, and fostered a vibrant community of data practitioners around the world.
 
 {%
   include figure.html
@@ -75,46 +79,118 @@ D3.js is a powerful library for creating complex and dynamic data visualizations
   caption='[Electricity Usage, 2019](https://observablehq.com/@mbostock/electric-usage-2019)'
 %}
 
-D3 was developed by Mike Bostock, who was at the time a graphics editor at the New York Times. He has written a lot about D3 and data visualization in general, and I highly recommend checking out his blog if you're into that kind of thing: [bost.ocks.org](https://bost.ocks.org/mike/).
+D3 was developed by Mike Bostock, who was at the time a graphics editor at the New York Times. He has written a lot about D3 and data visualization in general, and I recommend checking out his blog if you're into that kind of thing: [bost.ocks.org](https://bost.ocks.org/mike/).
 
 ### Three.js
 
 [threejs.org](https://threejs.org/)
 
-TK
+Three.js is a 3D library that tries to make it as easy as possible to get 3D content on a webpage.
 
-<!--
-Three.js is a 3D library that simplifies the process of creating 3D graphics on the web using WebGL. It abstracts away the complexity of WebGL, giving developers the ability to create impressive 3D scenes, animations, and effects with a more manageable set of APIs.
+Three.js is often confused with WebGL since more often than not, but not always, three.js uses WebGL to draw 3D. WebGL is a very low-level system that only draws points, lines, and triangles. To do anything useful with WebGL generally requires quite a bit of code and that is where three.js comes in. It handles stuff like scenes, lights, shadows, materials, textures, 3d math, all things that you'd have to write yourself if you were to use WebGL directly.
 
-Verbal Example:
-Imagine you're developing a website for a new housing development and you want to provide a virtual tour of the houses. With Three.js, you could build an interactive 3D model of a house that users can "walk through" by clicking and dragging their mouse to look around, experiencing the space as if they were there in person.
--->
+{%
+  include figure.html
+  src='threejs-cubes.png'
+  alt='An example of Three.js.'
+  caption='A bunch of cubes floating in your browser. See more examples on [threejs.org/examples](https://threejs.org/examples/).'
+%}
+
+{%
+  include figure.html
+  src='threejs-rainbow.png'
+  alt='An example of Three.js.'
+  caption='[This one](https://threejs.org/examples/#webgl_lines_fat_raycasting) is nice.'
+%}
+
+{%
+  include figure.html
+  src='threejs-figure.png'
+  alt='An example of Three.js.'
+  caption='An adjustable figure, with walking, running, idle animation. [Mess around with it](https://threejs.org/examples/#webgl_animation_skinning_additive_blending)'
+%}
+
+3D coding is a world unto itself, and the learning curve can be steep. However, people who get into it really enjoy it and can make some amazing things. If you're interested in learning more, I recommend checking out [The Book of Shaders](https://thebookofshaders.com/), which is a great resource for learning about it from the ground up.
 
 ## How to import a library into your project
 
 Every library will have its own instructions for how to use it. But in general, you'll need to do three things:
 
-1. Download the library, or link to it from a CDN
+1. Download the library, or get a link to a CDN
 2. Link to the library in your HTML file
 3. Write code that uses the library
 
-### Download the library, or link to it from a CDN
+Let's go through each step, using p5.js as an example.
 
-You can download the library from the library's website. For example, you can download Flickity from [flickity.metafizzy.co/](https://flickity.metafizzy.co/). You'll get a zip file that you can unzip and put in your project folder.
+### Download the library, or get a link to a CDN
 
-Alternatively, you can link to the library from a CDN (Content Delivery Network). A CDN is a collection of servers distributed across the globe that store copies of files. When you link to a file on a CDN, the file is downloaded from the server closest to you. This makes your website load faster and saves bandwidth on your server.
+You can download the library from the library's website. You'll get a zip file that you can unzip and put in your project folder. For our p5 example, you can download it from [p5js.org/download](https://p5js.org/download/).
+
+Alternatively, you can link to the library from a CDN (Content Delivery Network). A CDN is a collection of servers distributed across the globe that store copies of files. When you link to a file on a CDN, the file is downloaded from the server closest to you. This makes your website load faster and saves bandwidth on your server. So, when using a CDN you don't need to download the file. But there can be occasional outages with a CDN, so that's something to consider.
+
+To look for libraries hosted on a CDN, you can search for the library name on [cdnjs.com](https://cdnjs.com). For example, if you search for "p5js", you'll find a link to [cdnjs.com/libraries/p5.js](https://cdnjs.com/libraries/p5.js).
 
 ### Link to the library in your HTML file
 
-You'll need to link to the library in your HTML file. You can do this by adding a `<script>` tag to the `<head>` of your HTML file. The `<script>` tag should have a `src` attribute that points to the library file. For example, if you downloaded Flickity and put it in a folder called `flickity` in your project folder, you would add this to your HTML file:
+You'll need to link to the library in your HTML file. You can do this by adding a `<script>` tag to the `<head>` of your HTML file, or at the end of the `<body>` before it closes.
 
-EXAMPLE TK
+> Recommended practice: If a script is essential for the layout or functionality of the page (like a CSS framework or a foundational JavaScript library), it might be necessary to load it in the `<head>`. Scripts that enhance or manipulate page content, such as interactive features or animations, are often best placed near the end of the `<body>`.
 
-## Each of the libraries instruction pages
+```html
+<head>
+  <!-- other stuff -->
+  <script src="vendor/p5.min.js"></script>
+</head>
+<body>
+  <!-- all your page content -->
+  <script src="js/main.js"></script> <!-- this is the code that you write -->
+</body>
+```
 
-Flickity:
-...
+– or –
 
+```html
+<body>
+  <!-- all your page content -->
+  <script src="vendor/p5.min.js"></script>
+  <script src="js/main.js"></script> <!-- this is the code that you write -->
+```
+
+> Convention: the `vendor` folder in coding projects is a directory where third-party libraries, dependencies, and packages are stored. It's not a requirement to name the folder this, but it's a common practice.
+
+> Also: when you see a file that has `.min` in it, that means that it's a minified version of the file. Minification is the process of removing all unnecessary characters from the source code without changing its functionality. This reduces the size of the file, which makes it faster to download and run.
+
+### If you're using a CDN, it looks like this
+
+```html
+<head>
+  <!-- other stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js" integrity="sha512-pgK6Wo8doipc/IPQ0ilH3b47ww01345nR9ud1/6Qp0n+lQlEW9zuw6JhysRcUpBY4yKuVZjn1MAkDxbnncuGsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+`cdnjs.com` has a helpful "script copy" tag that creates this for you:
+
+{%
+  include figure.html
+  src='cdn-link.png'
+  alt='A picture of a script copy button on a CDN website.'
+  caption=''
+%}
+
+## Write code that uses the library
+
+The fun AND challenging part – learning to use the library. This is where you'll need to read the documentation and figure out how to use the library.
+
+So for p5, I would first check out some of their basic examples, and then pull up their documentation to see what's possible:
+
+[https://p5js.org/examples/](https://p5js.org/examples/) \
+[https://p5js.org/reference/](https://p5js.org/reference/)
+
+Some libraries even have nice tutorials for beginners:
+
+[https://p5js.org/learn/](https://p5js.org/learn/)
+
+_Much of a developer's life is reading through documentation and figuring out how to use things._
 
 ## API
 

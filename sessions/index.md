@@ -5,8 +5,8 @@ title: Sessions
 ## Unit 4: Networks
 
 | November 14 | Session 12 | sick day |
-| November 21 | [Session 13]({{ site.baseurl }}/sessions/13) | |
-| November 28 | [Session 14]({{ site.baseurl }}/sessions/14) | |
+| November 21 | [Session 13]({{ site.baseurl }}/sessions/13) | libraries and APIs |
+| November 28 | [Session 14]({{ site.baseurl }}/sessions/14) | good practices |
 | December 5 | [Session 15]({{ site.baseurl }}/sessions/15) | final presentations |
 
 ## Unit 3: Designing for Interaction
