@@ -21,28 +21,6 @@ padding: 0.25em;
 
 /* HTML/CSS/JS only rouge declarations */
 
-.kd,
-.kc {
-  color: #649ad1;
-}
-
-.nx {
-  color: #a7d9f9;
-}
-
-.dl,
-.s2 {
-  color: #c3ad7c;
-}
-
-.mi {
-  color: #bacdab;
-}
-
-.k {
-  color: #649ad1;
-}
-
 /* Default text color and background color */
 .highlight,
 .highlight .w {
@@ -53,97 +31,14 @@ padding: 0.25em;
   overflow: scroll;
 }
 
-/* Keywords and related tokens */
-.highlight .k,
-.highlight .kd,
-.highlight .kn,
-.highlight .kp,
-.highlight .kr,
-.highlight .kt,
-.highlight .kv {
-}
-
-/* Generic tokens */
-.highlight .gr {
-}
-
-/* Numbers */
-.highlight .nb,
-.highlight .nf {
-  color: #c6947c; // orange
-}
-
-.highlight .n {
-  color: #c6947c; // orange
-}
-
-.highlight .m {
-  color: #bacdab; // light green
-}
-
-/* Constructors */
-.highlight .nc {
-  color: #c3ad7c; // light orange
-}
-
-.highlight .nl {
-  color: #a7d9f9; // light-blue
-}
-
-/* Operators */
-.highlight .no {
-  color: #c6947c; // orange
-}
-
-/* Function and class names */
-.highlight .na {
-  color: #a7d9f9; // light-blue
-}
-
-/* Types and type names */
-.highlight .nt {
+.kd,
+.kc,
+.k,
+.highlight .nt,
+.highlight .cp {
   color: #649ad1; // blue
 }
 
-/* Literal and variable content */
-.highlight .l,
-.highlight .ld,
-.highlight .m,
-.highlight .mb,
-.highlight .mf,
-.highlight .mh,
-.highlight .mi,
-.highlight .il,
-.highlight .mo,
-.highlight .mx {
-}
-
-/* Symbols and brackets */
-.highlight .sb {
-}
-
-/* Exceptions */
-.highlight .ne {
-}
-
-/* Numeric values */
-.highlight .nv,
-.highlight .vc,
-.highlight .vg,
-.highlight .vi,
-.highlight .vm {
-}
-
-/* Operators and punctuations */
-.highlight .o,
-.highlight .ow {
-}
-
-/* User-defined variables and functions */
-.highlight .gu {
-}
-
-/* Comments and documentation */
 .highlight .c,
 .highlight .ch,
 .highlight .cd,
@@ -155,16 +50,31 @@ padding: 0.25em;
   color: #688855; // green
 }
 
-.highlight .cp {
-  color: #649ad1; // blue
-}
-
-/* Imports and includes */
-.highlight .ni {
-}
-
+.highlight .nb,
+.highlight .nf,
+.highlight .n,
+.highlight .nd,
+.highlight .no,
 .highlight .s {
   color: #c6947c; // orange
+}
+
+.dl,
+.s2,
+.highlight .nc {
+  color: #c3ad7c; // light orange
+}
+
+.nx,
+.highlight .nl,
+.highlight .na,
+.highlight .py {
+  color: #a7d9f9; // light blue
+}
+
+.mi,
+.highlight .m {
+  color: #bacdab; // light green
 }
 
 /* Code syntax for items not classed specifically by rouge */

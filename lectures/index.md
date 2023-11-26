@@ -21,3 +21,8 @@ title: Lectures
 | | author |
 | [Intro to JavaScript](intro-to-javascript) | Me |
 | [Libraries and APIs](libraries-and-apis) | Me |
+
+## General 💭
+
+| | author |
+| [Good Practices](good-practices) | Me |

@@ -9,39 +9,10 @@ Next semester
 - give them a set of typefaces they can use and talk about digital typeface law (if you're a student, it's fine)
 - pop quizzes / how to sniff chat gpt
 
----
-
 JS
 - carousel
 - bouncing ball js
 - P5 coding train
-
-Better practices
-- Use CSS grid (nobody really grasped the purpose of the grid lecture)
-- Use CSS variables
-  - mixins
-  - space variables
-  - colors
-- Componentization/templating
-  - Sharing CSS files
-  - Include header/footer with AJAX
-  ```javascript
-  fetch("./header.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.querySelector("header").innerHTML = data;
-    });
-
-  fetch("./footer.html")
-    .then(response => {
-      return response.text()
-    })
-    .then(data => {
-      document.querySelector("footer").innerHTML = data;
-    });
-  ```
 
 ---
 
