@@ -2,6 +2,8 @@
 title: Students
 ---
 
+Fall 2023
+
 [Aarav](https://aaravnarain.github.io/harmonic-collection/) \
 [Alyssa](https://alykang.github.io/Harmonic-Collection/) \
 [Amanda](https://amandalien.github.io/harmonic-collection/) \
@@ -17,4 +19,4 @@ title: Students
 [Sai](https://soysai.github.io/harmonic-collection/) \
 [Sasha](https://aleksandralevochka.github.io/Harmonic-Collection/) \
 [Selina](https://selinam04.github.io/Harmonic-collection/) \
-Yiwan
+[Yiwan](https://yiwan1w.github.io/Harmonic-Collection/)
