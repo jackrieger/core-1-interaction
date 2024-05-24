@@ -1,3 +1,4 @@
 baseurl: "" # the subpath of your site, e.g. /blog
+future: true # allow posts dated in the future
 title: "" # the name of your site, e.g. ACME Corp.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

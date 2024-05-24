@@ -1,7 +1,7 @@
 ---
 ---
 
-# All Posts
+# Classes
 
 <ul>
   {% for post in site.posts %}
