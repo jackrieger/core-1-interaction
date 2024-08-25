@@ -1,7 +1,8 @@
 ---
+layout: default
 ---
 
-# Classes
+# Sessions
 
 <ul>
   {% for post in site.posts %}

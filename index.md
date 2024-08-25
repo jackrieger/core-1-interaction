@@ -1,6 +1,4 @@
 ---
 layout: default
-# title
+title: Home
 ---
-
-# Home
