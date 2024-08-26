@@ -1,10 +1,13 @@
-<ul class="on-page-nav">
-  <span class="on-page-nav__title">On this page</span>
-  {% for item in page.toc %}
-    <li class="on-page-nav__item">
-      <a class="on-page-nav__link" href="#{{ item }}">
-        {{ item | replace: '-', ' ' | capitalize }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="on-page-nav">
+  <h3>On this page</h3>
+
+  <ul class="on-page-nav__item-container">
+    {% for item in page.toc %}
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#{{ item }}">
+          {{ item | replace: '-', ' ' | capitalize }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
