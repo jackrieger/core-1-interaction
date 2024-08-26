@@ -1,0 +1,18 @@
+.page-title {
+  margin-bottom: 1rem;
+}
+
+.page-date {
+  margin-bottom: $section-space;
+}
+
+.page-content {
+  h2 {
+    margin-bottom: $inner-section-space;
+    margin-top: $section-space;
+
+    &:first-of-type {
+      margin-top: unset;
+    }
+  }
+}

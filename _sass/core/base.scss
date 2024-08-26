@@ -1,0 +1,58 @@
+body {
+  background-color: #e1e4e4;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  line-height: 1.3;
+  padding-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+  color: #0000ff;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #0000ff;
+  }
+}
+
+code {
+  background-color: #cccccc;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.9em;
+  padding: 2px;
+}
+
+h1 {
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  max-width: $paragraph-length;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: "– ";
+  margin-left: $indent-space;
+  padding-left: 0;
+  max-width: $paragraph-length * 0.825;
+}

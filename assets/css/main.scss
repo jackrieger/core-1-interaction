@@ -1,4 +1,19 @@
 ---
 ---
 
-@import "reset";
+// Core
+@import "core/reset";
+@import "core/variables";
+@import "core/base";
+
+// Mixins
+@import "mixins/color_cycle";
+
+// Includes
+@import "includes/header";
+@import "includes/on_page_nav";
+
+// Layouts
+@import "layouts/default";
+@import "layouts/home";
+@import "layouts/post";
