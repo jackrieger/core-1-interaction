@@ -1,14 +1,19 @@
 ---
 ---
 
-// Foundation
-@import "reset";
-@import "variables";
-@import "base";
+// Core
+@import "core/reset";
+@import "core/variables";
+@import "core/base";
 
-// Components
-@import "header";
-@import "on_page_nav";
+// Mixins
+@import "mixins/color_cycle";
+
+// Includes
+@import "includes/header";
+@import "includes/on_page_nav";
 
 // Layouts
-@import "layouts";
+@import "layouts/default";
+@import "layouts/home";
+@import "layouts/post";
