@@ -1,5 +1,14 @@
 ---
 ---
 
+// Foundation
 @import "reset";
+@import "variables";
 @import "base";
+
+// Components
+@import "header";
+@import "on_page_nav";
+
+// Layouts
+@import "layouts";

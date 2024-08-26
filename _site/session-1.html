@@ -7,40 +7,50 @@
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
   <body>
-    <header>
-  <h2>Core 1: Interaction</h2>
+    <header class="site-header">
+  <h3 class="site-header__site-name">Core 1: Interaction</h2>
 
-  <nav>
-    <ul>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/sessions">Sessions</a>
-      </li>
-    </ul>
+  <nav class="site-nav">
+    <a class="site-nav__link" href="/">Home</a>
+    <a class="site-nav__link" href="/sessions">Sessions</a>
+    <a class="site-nav__link" href="/resources">Resources</a>
   </nav>
 </header>
 
-    <h1>Session 1</h1>
-    <ul>
-  <span>On this page</span>
+
+    <h1 class="page-title">
+      Session 1
+    </h1>
+    <h3 class="page-date">
+      August 27, 2024
+    </h3>
+
+    <ul class="on-page-nav">
+  <span class="on-page-nav__title">On this page</span>
   
-    <li>
-      <a href="#introductions">Introductions</a>
+    <li class="on-page-nav__item">
+      <a class="on-page-nav__link" href="#introductions">
+        Introductions
+      </a>
     </li>
   
-    <li>
-      <a href="#syllabus">Syllabus</a>
+    <li class="on-page-nav__item">
+      <a class="on-page-nav__link" href="#syllabus">
+        Syllabus
+      </a>
     </li>
   
-    <li>
-      <a href="#class-contract">Class contract</a>
+    <li class="on-page-nav__item">
+      <a class="on-page-nav__link" href="#class-contract">
+        Class contract
+      </a>
     </li>
   
 </ul>
 
-    <h2 id="introductions">Introductions</h2>
+
+    <main class="page-content">
+      <h2 id="introductions">Introductions</h2>
 
 <p>Hey let’s meet each other etc.</p>
 
@@ -56,5 +66,6 @@
 
 <p>Your home away from home</p>
 
+    </main>
   </body>
 </html>

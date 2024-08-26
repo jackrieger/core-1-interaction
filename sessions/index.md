@@ -1,13 +1,7 @@
 ---
 layout: default
+title: Sessions
 ---
 
-# Sessions
+{% include post_list.html %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>

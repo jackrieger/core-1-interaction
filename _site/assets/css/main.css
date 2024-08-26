@@ -108,8 +108,11 @@ meter {
 }
 
 body {
+  background-color: #e1e7e7;
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  padding: 1.5rem;
 }
 
 a {
@@ -121,7 +124,53 @@ a:hover {
 }
 
 h1 {
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
   font-size: 1.75rem;
+}
+
+.site-header {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.site-header__site-name {
+  margin-right: 2rem;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__link {
+  margin-right: 1rem;
+}
+
+.on-page-nav {
+  margin-bottom: 3rem;
+}
+
+.on-page-nav__link {
+  margin-left: 1.5em;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+}
+
+.page-date {
+  margin-bottom: 3rem;
+}
+
+.page-content h2 {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+.page-content h2:first-of-type {
+  margin-top: unset;
 }
 
 /*# sourceMappingURL=main.css.map */

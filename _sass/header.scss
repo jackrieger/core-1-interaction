@@ -1,0 +1,16 @@
+.site-header {
+  display: flex;
+  margin-bottom: $section-space;
+}
+
+.site-header__site-name {
+  margin-right: 2rem;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__link {
+  margin-right: 1rem;
+}
