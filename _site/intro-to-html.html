@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Intro to HTML - Core 1: Interaction</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body class="post">
+    <header class="site-header">
+  <span class="site-header__site-name">Core 1: Interaction</span>
+
+  <nav class="site-nav">
+    <a class="site-nav__link" href="/">Home</a>
+    <a class="site-nav__link" href="/sessions/">Sessions</a>
+    <a class="site-nav__link" href="/project/">Project</a>
+    <a class="site-nav__link" href="/resources/">Resources</a>
+  </nav>
+</header>
+
+
+    <h1 class="page-title">
+      Intro to HTML
+    </h1>
+
+    <div class="on-page-nav">
+  <h3>On this page</h3>
+
+  <ul class="on-page-nav__item-container">
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#what-is-html">
+          What is html
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#the-basic-document">
+          The basic document
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#html-elements">
+          Html elements
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#attributes">
+          Attributes
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#block-elements">
+          Block elements
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#inline-elements">
+          Inline elements
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    <main class="page-content">
+      <h2 id="what-is-html">What is HTML?</h2>
+
+<p>Hypertext Markup Language (HTML) is the standard markup language/format for creating web pages, containing the content and structure of a page as a series of tags/elements.</p>
+
+<p>HTML is the <em>skeleton</em> of the web. At its most basic it is a text file, in a folder on a computer, with a <code class="language-plaintext highlighter-rouge">.html</code> extension.</p>
+
+<h2 id="the-basic-document">The basic document</h2>
+
+<p>HTML consists of a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">range of elements</a>, nested inside one another.</p>
+
+<p><em>As a visual:</em></p>
+
+<p><img src="/assets/images/nesting.svg" /></p>
+
+<p><em>As code:</em></p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="html - skeleton" src="https://codepen.io/jackrieger/embed/jOjeYod?default-tab=html%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/jOjeYod">
+  html - skeleton</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>The <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> element contains all elements of the page, the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> element contains the title, and the body contains <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>.</p>
+
+<p>We call these <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"><em>semantic</em> elements</a>—which is saying that they give their contents a <em>meaning</em> or a <em>role</em>. These <em>roles</em> are then interpreted by your browser (Chrome, Safari, Firefox, etc.) when it loads the file, to ultimately display the page. We call this <em>parsing</em> the document.</p>
+
+<p><em>In our example, here is what we’ve told the computer:</em></p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;!DOCTYPE html&gt;</code> <br />
+What kind of file this is, so it knows how to parse it. <br />
+<em>This is not necessary in CSS or JS files.</em></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> <br />
+The root element of an HTML page, containing all the content.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> <br />
+The <em>meta</em> information about the HTML page—like its title, default language, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">scripts</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">stylesheets</a>. <br />
+<em>Nothing in this element is visible on the page itself.</em></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> <br />
+Specifies a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">title</a> for the page—which is shown in the browser’s tab, and when it is shared.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> <br />
+Defines the document’s body—the container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> <br />
+Defines a primary/first-level heading.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> <br />
+Defines a paragraph.</p>
+  </li>
+</ul>
+
+<h2 id="html-elements">HTML Elements</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Element">Elements</a> are composed of tags (opening, closing) and their content:</p>
+
+<p><img src="/assets/images/tag.svg" /></p>
+
+<p>Some elements do not have any content or children, like <code class="language-plaintext highlighter-rouge">&lt;br&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code>. These are called <a href="https://developer.mozilla.org/en-US/docs/Glossary/Empty_element"><em>empty elements</em></a> and do not have a closing tag.</p>
+
+<h3 id="common-elements">Common elements</h3>
+
+<p>Headings: <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;h3&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;h4&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;h5&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></p>
+
+<p>Paragraphs: <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></p>
+
+<p>Links: <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></p>
+
+<blockquote>
+  <p>The <code class="language-plaintext highlighter-rouge">href</code> (<em>H</em>ypertext <em>REF</em>erence) specifies a URL that the link points to, and the tag wraps the visible link text. The <code class="language-plaintext highlighter-rouge">href</code> can point to another, local HTML file (living in the same directory structure) or an external page.</p>
+</blockquote>
+
+<p>Images: <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code></p>
+
+<blockquote>
+  <p>The <code class="language-plaintext highlighter-rouge">src</code> can point to a local image file or an external URL.</p>
+</blockquote>
+
+<p>Sections of a page: <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;article&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code></p>
+
+<blockquote>
+  <p>These are the structural containers of a website. The names don’t imbue meaning or function directly, but help us organize and think about our content structure.</p>
+</blockquote>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="html - common elements" src="https://codepen.io/jackrieger/embed/bGPmLdQ?default-tab=html%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/bGPmLdQ">
+  html - common elements</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<h2 id="attributes">Attributes</h2>
+
+<p>All HTML elements can have <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">attributes</a>, which provide more information about the element:</p>
+
+<p><img src="/assets/images/attr.svg" /></p>
+
+<h3 id="common-attributes">Common attributes</h3>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">href</code> attribute of <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> specifies the URL of the page the link goes to.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.example.com"</span><span class="nt">&gt;</span>Goes to example.com<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">src</code> attribute of <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> specifies the path to the image to be displayed, as above.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"example.jpg"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">alt</code> attribute of <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> provides an alternate text for an image, used by screen readers.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"example.jpg"</span> <span class="na">alt=</span><span class="s">"A description of the image."</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">id</code> specifies a singular, unique element on a page—for CSS targeting and anchor (scroll, “jump”) links, prepended with <code class="language-plaintext highlighter-rouge">#</code>.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"a-heading-element"</span><span class="nt">&gt;</span>A heading element<span class="nt">&lt;/h2&gt;</span>
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#a-heading-element"</span><span class="nt">&gt;</span>Goes to “a heading element”<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">class</code> attribute provides a selector to hook on to with CSS.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"warning"</span><span class="nt">&gt;</span>We’ll get into this soon.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<h2 id="block-elements">Block elements</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">Block-level elements</a> always start on a new line, and take up the full width available—stretching out to the left and right of their parent/container. They stack on top of each other. Importantly, block elements can have a top and bottom margin, unlike inline elements.</p>
+
+<p>Earlier, we talked about area-defining elements. All of these area-defining elements are also block elements:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code></p>
+
+<p>The heading elements (<code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, etc.), and <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> tags are also block-level.</p>
+
+<p>All of the above, in typical use:</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="html - block elements" src="https://codepen.io/jackrieger/embed/qBzJxam?default-tab=html%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/qBzJxam">
+  html - block elements</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<blockquote>
+  <p>As said earlier in the lecture, HTML is the skeleton and content of the page. It won’t look like much without CSS.</p>
+</blockquote>
+
+<h2 id="inline-elements">Inline elements</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">Inline elements</a> do <em>not</em> start on a new line, and only take up as much width as necessary. I like to think of these as the little metal slugs <a href="https://en.wikipedia.org/wiki/Slug_(typesetting)">from printing</a>. Other text and inline elements will continue to flow around them, and they can wrap to new lines:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code></p>
+
+<p>Inline elements often exist within block elements:</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="html - inline elements" src="https://codepen.io/jackrieger/embed/rNEqJjx?default-tab=html%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/rNEqJjx">
+  html - inline elements</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+    </main>
+  </body>
+</html>

@@ -1,4 +1,7 @@
-# baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/core-1-interaction" # the subpath of your site, e.g. /blog
+collections:
+  lectures:
+    output: true
 future: true # allow posts dated in the future
 title: "Core 1: Interaction" # the name of your site, e.g. ACME Corp.
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://jackrieger.github.io" # the base hostname & protocol for your site, e.g. http://example.com

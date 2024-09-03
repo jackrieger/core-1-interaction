@@ -1,0 +1,5 @@
+@mixin reset-list {
+  list-style: none;
+  margin-left: 0;
+  max-width: $paragraph-length;
+}

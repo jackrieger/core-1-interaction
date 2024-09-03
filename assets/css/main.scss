@@ -8,10 +8,12 @@
 
 // Mixins
 @import "mixins/color_cycle";
+@import "mixins/reset_list";
 
 // Includes
 @import "includes/header";
 @import "includes/on_page_nav";
+@import "includes/post_list";
 
 // Layouts
 @import "layouts/default";
