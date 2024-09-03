@@ -32,3 +32,9 @@ For Midterms, we will have a one on one meeting. At that time, you will present 
 - How would you describe the pacing of the collection so far? Does it feel considered? Can there be a moment for a dramatic break, or an acceleration?
 - Are there opportunities to establish a template or system to the design – if so, when, where, and how? Can we break the system mindfully to add interest?
 - You will also prepare a short written doc (one paragraph) that explains your collection’s theme so far and explains three other avenues you can explore for the remaining weeks of the semester.
+
+## Past Examples
+
+- [Gabriella Acquafredda](https://gabriellaacquafredda.github.io/harmonic-collection/)
+- [Sarah Muller](https://mulls528.github.io/entry3/)
+- [Nisha Tiangratanakul](https://nishatiangratanakul.github.io/harmonics-collection/)
