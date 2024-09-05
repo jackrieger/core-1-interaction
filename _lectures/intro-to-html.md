@@ -10,6 +10,8 @@ toc:
   - attributes
   - block-elements
   - inline-elements
+  - tags
+  - the-index-file
 ---
 
 ## What is HTML?
@@ -25,7 +27,7 @@ HTML consists of a [range of elements](https://developer.mozilla.org/en-US/docs
 
 *As a visual:*
 
-<img src="{{ 'nesting.svg' | image_path }}">
+{% include image.html name="nesting.svg" %}
 
 *As code:*
 
@@ -69,7 +71,7 @@ We call these [*semantic* elements](https://developer.mozilla.org/en-US/docs/Glo
 
 [Elements](https://developer.mozilla.org/en-US/docs/Glossary/Element) are composed of tags (opening, closing) and their content:
 
-<img src="{{ 'tag.svg' | image_path }}">
+{% include image.html name="tag.svg" %}
 
 Some elements do not have any content or children, like `<br>` or `<img>`. These are called [*empty elements*](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element) and do not have a closing tag.
 
@@ -103,7 +105,7 @@ Sections of a page: `<header>` `<footer>` `<nav>` `<main>` `<article>` `<section
 
 All HTML elements can have [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes), which provide more information about the element:
 
-<img src="{{ 'attr.svg' | image_path }}">
+{% include image.html name="attr.svg" %}
 
 ### Common attributes
 
@@ -174,3 +176,22 @@ Inline elements often exist within block elements:
   html - inline elements</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
+
+## Tags
+
+What is shown here could be considered the tags used most often, but there are so many different kinds of tags:
+
+```
+
+```
+
+Have a look at all that are available:
+
+
+## The index file
+
+The name of an HTML file is important.
+
+---
+
+This lecture was originally written by [Michael Fehrenbach](https://michaelfehrenbach.com/). It has been lightly edited.
