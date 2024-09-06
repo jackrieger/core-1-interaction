@@ -182,15 +182,18 @@ Inline elements often exist within block elements:
 What is shown here could be considered the tags used most often, but there are so many different kinds of tags:
 
 ```
-
+<a> <abbr> <address> <article> <b> <body> <br> <button> <div> <details> <footer> <form> <h1> <h2> <h3> <h4> <h5> <h6> <head> <header> <html> <img> <input> <label> <li> <main> <nav> <noscript> <ol> <option> <output> <p> <script> <select> <span> <summary> <title> <ul>
 ```
 
-Have a look at all that are available:
+Have a look at all that are available: [HTML elements reference - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 
 ## The index file
 
-The name of an HTML file is important.
+The name `index.html` is important because web servers look for this file by default when no specific file is requested. When users visit the root URL of a site (e.g., `example.com`), the server automatically loads index.html as the homepage.
+
+This naming convention allows for cleaner URLs (like `example.com` instead of `example.com/index.html`) and ensures that the correct file is served without errors. `index.html` is essentially the entry point for most websites.
+
 
 ---
 
