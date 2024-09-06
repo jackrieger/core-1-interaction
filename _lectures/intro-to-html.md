@@ -185,7 +185,7 @@ What is shown here could be considered the tags used most often, but there are s
 <a> <abbr> <address> <article> <b> <body> <br> <button> <div> <details> <footer> <form> <h1> <h2> <h3> <h4> <h5> <h6> <head> <header> <html> <img> <input> <label> <li> <main> <nav> <noscript> <ol> <option> <output> <p> <script> <select> <span> <summary> <title> <ul>
 ```
 
-Have a look at all that are available: [HTML elements reference - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+Have a look at all that are available: [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 
 ## The index file

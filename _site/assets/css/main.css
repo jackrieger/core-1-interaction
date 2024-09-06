@@ -181,6 +181,10 @@ p:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 strong {
   font-weight: bold;
 }
