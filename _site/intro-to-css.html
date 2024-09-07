@@ -123,7 +123,6 @@
 
 <p>So the next way that was added to the standard was using a special HTML element, <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code>, that wraps blocks of CSS that then apply to an entire document. They go up in the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> of our <a href="/topic/html/#the-basic-document">HTML documents</a>:</p>
 
-<p><strong>CODEPEN</strong></p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -149,7 +148,6 @@
 
 <p>So this is already much better, allowing us to style whole pages easily and consistently. But what about when we have <em>multiple</em> pages? If you wanted a whole site to use the same styles, you’d have to duplicate the <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tag over and over, updated it everywhere whenever you changes. So along comes the <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> element:</p>
 
-<p><strong>CODEPEN</strong></p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
@@ -166,12 +164,11 @@
 
 <p>And then in a separate <code class="language-plaintext highlighter-rouge">style.css</code> file (in this case, in the same directory as our HTML file), we can have the same rules as before – no need for the outside wrapping <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> tag:</p>
 
-<p><strong>CODEPEN</strong></p>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="nb">sans-serif</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<iframe height="300" style="width: 100%;" scrolling="no" title="css - external link tag" src="https://codepen.io/jackrieger/embed/WNqLqEe?default-tab=css%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/WNqLqEe">
+  css - external link tag</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 <p>This will apply to any page that we add the <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> to, and updating the styles will now change the color of the paragraphs in our <em>entire web site</em>.</p>
 

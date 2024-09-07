@@ -52,7 +52,6 @@ It makes it hard to read, and hard to change and maintain. You’d have to updat
 
 So the next way that was added to the standard was using a special HTML element, `<style>`, that wraps blocks of CSS that then apply to an entire document. They go up in the `<head>` of our [HTML documents](/topic/html/#the-basic-document):
 
-**CODEPEN**
 ```html
 <!DOCTYPE html>
 <html>
@@ -79,7 +78,6 @@ The rules are written written with selectors – more on those, below. But impo
 
 So this is already much better, allowing us to style whole pages easily and consistently. But what about when we have *multiple* pages? If you wanted a whole site to use the same styles, you’d have to duplicate the `<style>` tag over and over, updated it everywhere whenever you changes. So along comes the `<link>` element:
 
-**CODEPEN**
 ```html
 <!DOCTYPE html>
 <html>
@@ -97,13 +95,11 @@ So this is already much better, allowing us to style whole pages easily and cons
 
 And then in a separate `style.css` file (in this case, in the same directory as our HTML file), we can have the same rules as before – no need for the outside wrapping `<style>` tag:
 
-**CODEPEN**
-```css
-p {
-  color: red;
-  font-family: sans-serif;
-}
-```
+<iframe height="300" style="width: 100%;" scrolling="no" title="css - external link tag" src="https://codepen.io/jackrieger/embed/WNqLqEe?default-tab=css%2Cresult&editable=true&theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/WNqLqEe">
+  css - external link tag</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
 This will apply to any page that we add the `<link>` to, and updating the styles will now change the color of the paragraphs in our *entire web site*.
 
@@ -121,7 +117,6 @@ The curly brackets `{` `}` enclose all the declarations you want to apply to a 
 Properties are always separated from their corresponding values by a colon `:`, and each declaration line has to end in a semicolon `;`. Also, there are no spaces between values and their units (like `20px`)
 
 There are [many, many CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference). Here is a shorter [“common” list](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference).
-
 
 ## Basic selectors
 
@@ -159,7 +154,6 @@ You can also use an `id`, which is a kind of [special attribute](https://develo
 
 These are prefixed by `#` in CSS, as with `#title` and `#introduction`.
 
-
 ### Class selector
 
 You can then use a `class` to [target specific instances](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors). They are added as an *[attribute](/topic/html/#attributes)* on the element you want to target:
@@ -175,7 +169,6 @@ The *value* here is our class name, which we write in CSS by prefixing with a `
 Individual elements can have *multiple* classes, too. Class names can be whatever you want – there are whole methodologies about what to call these things, such as [BEM](https://getbem.com/introduction/), but for now just make them descriptive and consistent.
 
 Classes are the most common way to target things in CSS. Prefer them over IDs, as they are more flexible and reusable. (You can only use an ID once, but you can use a class as many times as you want.)
-
 
 ## Advanced selectors
 
@@ -199,7 +192,6 @@ These are [special selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/P
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-
 ## Specificity
 
 The first three targeting methods (`element`, `.class`, `#id`) are listed in increasing order of [*specificity*](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), meaning that a class trumps an element rule, and an ID trumps a class.
@@ -216,7 +208,6 @@ You could write a *long* book (and many people have) about CSS specificity –�
 
 The easiest way to avoid specificity problems is generally to *stay at the same level throughout your HTML/CSS, by just using classes*.
 
-
 ## Inheritance
 
 [Some CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance) set on a parent also apply to their children – such as `color` or `font-family`. Most spacing/layout properties, like `width` and `margin` do not.
@@ -230,7 +221,6 @@ This allows you to quickly set some properties globally, without having many bri
 </iframe>
 
 All the children inherit the `body` styles.
-
 
 ## Examples
 
@@ -271,7 +261,6 @@ Once you’ve got a `font-family` in, there are additional properties to contro
   css type properties</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-
 
 ## Resets
 
