@@ -143,11 +143,13 @@ blockquote {
 code {
   background-color: #dddddd;
   border-radius: 0.25rem;
-  border: solid 1px #aaaaaa;
-  color: #4db5f1;
+  color: #d827a6;
   font-family: monospace;
   font-size: 0.8em;
-  padding: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 em {
@@ -181,16 +183,18 @@ p:not(:last-child) {
 }
 
 pre {
-  white-space: pre-wrap;
+  overflow-x: scroll;
+  white-space: pre;
 }
 pre:has(code) {
   background-color: #dddddd;
-  border: solid 1px #aaaaaa;
   border-radius: 0.25rem;
   max-width: 64ch;
+  padding: 0.5em;
 }
 pre:has(code) code {
-  border: none;
+  color: #333333;
+  padding: 0;
 }
 
 strong {

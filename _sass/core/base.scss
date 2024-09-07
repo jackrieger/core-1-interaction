@@ -34,11 +34,13 @@ blockquote {
 code {
   background-color: $gray-light;
   border-radius: $border-radius;
-  border: solid 1px $gray;
   color: $blue-light;
   font-family: monospace;
   font-size: 0.8em;
-  padding: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 em {
@@ -73,16 +75,18 @@ p {
 }
 
 pre {
-  white-space: pre-wrap;
+  overflow-x: scroll;
+  white-space: pre;
 
   &:has(code) {
     background-color: $gray-light;
-    border: solid 1px $gray;
     border-radius: $border-radius;
     max-width: $paragraph-length;
+    padding: 0.5em;
 
     code {
-      border: none;
+      color: $black-light;
+      padding: 0;
     }
   }
 }
