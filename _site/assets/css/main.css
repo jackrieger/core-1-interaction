@@ -122,16 +122,16 @@ body {
 
 a {
   border-bottom: 1px solid transparent;
-  color: #0000ff;
+  color: #352aff;
   text-decoration: none;
 }
 a:hover {
-  border-bottom: 1px solid #0000ff;
+  border-bottom: 1px solid #352aff;
 }
 
 blockquote {
   background-color: #f9f9f9;
-  border-left: 0.25rem solid #dddddd;
+  border-left: 0.25rem solid #aaaaaa;
   color: #555555;
   margin-bottom: 1.5rem;
   margin-left: 0;
@@ -143,12 +143,11 @@ blockquote {
 code {
   background-color: #dddddd;
   border-radius: 0.25rem;
+  border: solid 1px #aaaaaa;
+  color: #4db5f1;
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 2px;
-}
-code span {
-  color: orangered;
 }
 
 em {
@@ -183,6 +182,15 @@ p:not(:last-child) {
 
 pre {
   white-space: pre-wrap;
+}
+pre:has(code) {
+  background-color: #dddddd;
+  border: solid 1px #aaaaaa;
+  border-radius: 0.25rem;
+  max-width: 64ch;
+}
+pre:has(code) code {
+  border: none;
 }
 
 strong {

@@ -1,5 +1,5 @@
 body {
-  background-color: #fdfdfd;
+  background-color: $white;
   font-family: Arial, sans-serif;
   font-size: 20px;
   letter-spacing: 0.015em;
@@ -12,18 +12,18 @@ body {
 
 a {
   border-bottom: 1px solid transparent;
-  color: #0000ff;
+  color: $blue;
   text-decoration: none;
 
   &:hover {
-    border-bottom: 1px solid #0000ff;
+    border-bottom: 1px solid $blue;
   }
 }
 
 blockquote {
-  background-color: #f9f9f9;
-  border-left: 0.25rem solid #dddddd;
-  color: #555555;
+  background-color: $white-dark;
+  border-left: 0.25rem solid $gray;
+  color: $gray-dark;
   margin-bottom: $paragraph-space;
   margin-left: 0;
   margin-right: 0;
@@ -32,15 +32,13 @@ blockquote {
 }
 
 code {
-  background-color: #dddddd;
-  border-radius: 0.25rem;
+  background-color: $gray-light;
+  border-radius: $border-radius;
+  border: solid 1px $gray;
+  color: $blue-light;
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 2px;
-
-  span {
-    color: orangered;
-  }
 }
 
 em {
@@ -76,6 +74,17 @@ p {
 
 pre {
   white-space: pre-wrap;
+
+  &:has(code) {
+    background-color: $gray-light;
+    border: solid 1px $gray;
+    border-radius: $border-radius;
+    max-width: $paragraph-length;
+
+    code {
+      border: none;
+    }
+  }
 }
 
 strong {

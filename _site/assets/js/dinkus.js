@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const dinkuses = [
+  const dinkusArray = [
     "⁂ ⁂ ⁂",
     "* * *",
     "• • •",
-    "~ * ~"
+    "~ * ~",
   ];
 
   document.querySelectorAll("hr").forEach((hr) => {
-    const dinkusSpan = document.createElement("pre");
-    dinkusSpan.className = "dinkus";
-    dinkusSpan.textContent = dinkuses[Math.floor(Math.random() * dinkuses.length)];
-    hr.replaceWith(dinkusSpan);
+    const el = document.createElement("pre");
+    el.className = "dinkus";
+    el.textContent = dinkusArray[Math.floor(Math.random() * dinkusArray.length)];
+    hr.replaceWith(el);
   });
 });
