@@ -15,11 +15,13 @@ toc:
 
 ## Making Changes
 
-In our case, there are two layers of making and saving changes. Any changes you make will be autosaved by Codespaces. However, when you actually want these changes to make it to your live site, you need to _commit_ them. You can think of commits like checkpoints in your code. One example might be, you make the menu navigation for your site, and then turn that into a commit. How much changes you put in a commit is up to you. You must 
+In our case, there are two layers of making and saving changes. Any changes you make will be autosaved by Codespaces. However, when you actually want these changes to make it to your live site, you need to _commit_ them. You can think of commits like checkpoints in your code. One example might be, you make the menu navigation for your site, and then turn that into a commit. How much changes you put in a commit is up to you:
+
+{% include image.html name="commit.png" %}
 
 Then for these commits to go to the live site, you can use the "Sync Changes" button in the commit sidebar menu item of Codespaces:
 
-
+{% include image.html name="sync-changes.png" %}
 
 ## Live Site
 
