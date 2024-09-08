@@ -2,7 +2,6 @@
   {% for lecture in site.lectures %}
     <li class="lecture-list__item">
       <a class="lecture-list__link" href="{{ lecture.url | relative_url }}">{{ lecture.title }}</a>
-      <span class="lecture-list__date">{{ lecture.date | date: "%B %e" }}</span>
     </li>
   {% endfor %}
 </ul>
