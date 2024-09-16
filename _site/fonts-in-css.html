@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Fonts in CSS - Core 1: Interaction</title>
+    <link rel="stylesheet" href="/core-1-interaction/assets/css/main.css">
+  </head>
+  <body class="post">
+    <header class="site-header">
+  <span class="site-header__site-name">Core 1: Interaction</span>
+
+  <nav class="site-nav">
+    <a class="site-nav__link" href="/core-1-interaction/">Home</a>
+    <a class="site-nav__link" href="/core-1-interaction/sessions/">Sessions</a>
+    <a class="site-nav__link" href="/core-1-interaction/project/">Project</a>
+    <a class="site-nav__link" href="/core-1-interaction/resources/">Resources</a>
+  </nav>
+</header>
+
+
+    <h1 class="page-title">
+      Fonts in CSS
+    </h1>
+
+    <div class="on-page-nav">
+  <h3 class="on-page-nav__title">On this page</h3>
+
+  <ul class="on-page-nav__item-container">
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#web-safe-fonts">
+          Web safe fonts
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#embedding-a-font-file">
+          Embedding a font file
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#referencing-a-font-file-on-the-internet">
+          Referencing a font file on the internet
+        </a>
+      </li>
+    
+      <li class="on-page-nav__item">
+        <a class="on-page-nav__link" href="#best-practices">
+          Best practices
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    <main class="page-content">
+      <h2 id="web-safe-fonts">Web-safe fonts</h2>
+
+<p>When styling text on the web, it’s important to consider the fonts available on users’ devices. Web-safe fonts are fonts commonly installed across various operating systems and browsers. Using these ensures that your text appears consistently for most users without requiring them to download additional resources.</p>
+
+<h3 id="common-web-safe-fonts">Common web-safe fonts</h3>
+
+<ul>
+  <li>Serif fonts:
+    <ul>
+      <li>Times New Roman</li>
+      <li>Georgia</li>
+      <li>Garamond</li>
+    </ul>
+  </li>
+  <li>Sans-serif fonts:
+    <ul>
+      <li>Arial</li>
+      <li>Helvetica</li>
+      <li>Verdana</li>
+    </ul>
+  </li>
+  <li>Monospace fonts:
+    <ul>
+      <li>Courier New</li>
+      <li>Lucida Console</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="using-font-stacks">Using font stacks</h3>
+
+<p>To provide fallback options if a specific font isn’t available, use a font stack. This is a list of fonts specified in order of preference:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Helvetica Neue"</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In this example, the browser tries to use “Helvetica Neue” first. If it’s not available, it falls back to Arial, and finally to the default sans-serif font of the user’s system.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Here’s how you might apply web-safe fonts to different elements:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">code</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="n">Courier</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>TODO: CODEPEN</p>
+
+<h2 id="embedding-a-font-file">Embedding a font file</h2>
+
+<p>To use custom fonts not installed on users’ devices, you can embed font files directly into your CSS using the <code class="language-plaintext highlighter-rouge">@font-face</code> rule.</p>
+
+<h3 id="using-font-face">Using <code class="language-plaintext highlighter-rouge">@font-face</code></h3>
+
+<p>The <code class="language-plaintext highlighter-rouge">@font-face</code> rule allows you to define a custom font by specifying its name and pointing to the font file’s URL:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('fonts/MyCustomFont.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('fonts/MyCustomFont.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>After defining the font, you can apply it like any other font:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="font-formats">Font formats</h3>
+
+<p>Common font formats include:</p>
+
+<ul>
+  <li>WOFF and WOFF2: Web Open Font Format, optimized for web use.</li>
+  <li>TTF/OTF: TrueType Font and OpenType Font, standard formats.</li>
+  <li>EOT: Embedded OpenType, primarily for older Internet Explorer versions.</li>
+  <li>SVG: Scalable Vector Graphics font format.</li>
+</ul>
+
+<p>WOFF and WOFF2 are recommended due to their compression and broad browser support.</p>
+
+<h3 id="example-1">Example</h3>
+
+<p>Here’s a practical example of embedding a custom font:</p>
+
+<p>TODO: CODEPEN</p>
+
+<h2 id="referencing-a-font-file-on-the-internet">Referencing a font file on the internet</h2>
+
+<p>Instead of hosting font files yourself, you can reference fonts provided by online services like Google Fonts or Adobe Fonts.</p>
+
+<h3 id="google-fonts">Google Fonts</h3>
+
+<p>Google Fonts is a free service offering a vast library of fonts. To use a Google Font, include a <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> in your HTML <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>Then apply the font in your CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Roboto'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="adobe-fonts">Adobe Fonts</h3>
+
+<p>Adobe Fonts requires an Adobe Creative Cloud subscription. After selecting fonts, Adobe provides code to include in your HTML:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://use.typekit.net/xxxxxxx.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<h3 id="advantages-of-using-online-fonts">Advantages of using online fonts</h3>
+
+<ul>
+  <li>Ease of use: Simple implementation without hosting font files.</li>
+  <li>Performance: Fonts are served from optimized CDNs.</li>
+  <li>Variety: Access to a large collection of fonts.</li>
+</ul>
+
+<h3 id="potential-issues">Potential issues</h3>
+
+<ul>
+  <li>Privacy concerns: Third-party services may track user data.</li>
+  <li>Dependence on external services: If the service is down, fonts may not load.</li>
+</ul>
+
+<h3 id="example-2">Example</h3>
+
+<p>Using Google Fonts to include the “Lato” font:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>TODO: CODEPEN</p>
+
+<h2 id="best-practices">Best practices</h2>
+
+<p>When working with fonts in CSS, keep these best practices in mind:</p>
+
+<h3 id="provide-fallback-fonts">Provide fallback fonts</h3>
+
+<p>Always include fallback fonts in your <code class="language-plaintext highlighter-rouge">font-family</code> declarations:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Open Sans'</span><span class="p">,</span> <span class="n">Arial</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="setting-reusable-font-classes">Setting reusable font classes</h3>
+
+    </main>
+
+    <script src="/core-1-interaction/assets/js/dinkus.js"></script>
+  </body>
+</html>

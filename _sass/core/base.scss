@@ -1,7 +1,10 @@
+:root {
+  font-size: 20px;
+}
+
 body {
   background-color: $white;
   font-family: Arial, sans-serif;
-  font-size: 20px;
   letter-spacing: 0.015em;
   line-height: 1.3;
   padding-bottom: 6rem;
@@ -48,16 +51,16 @@ em {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.02em;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: $paragraph-space;
 }
 
@@ -98,7 +101,12 @@ strong {
 ul {
   list-style-position: outside;
   list-style-type: "– ";
+  margin-bottom: $paragraph-space;
   margin-left: $indent-space;
-  padding-left: 0;
   max-width: $paragraph-length * 0.825;
+  padding-left: 0;
+
+  ul {
+    margin-bottom: 0;
+  }
 }
