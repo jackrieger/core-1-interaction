@@ -6,7 +6,7 @@ title: Fonts in CSS
 toc:
   - web-safe-fonts
   - embedding-a-font-file
-  - referencing-a-font-file-on-the-internet
+  - referencing-a-font-file-online
   - best-practices
 ---
 
@@ -40,33 +40,9 @@ body {
 
 In this example, the browser tries to use "Helvetica Neue" first. If it's not available, it falls back to Arial, and finally to the default sans-serif font of the user's system.
 
-### Example
-
-Here's how you might apply web-safe fonts to different elements:
-
-```css
-h1 {
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-code {
-  font-family: "Courier New", Courier, monospace;
-}
-```
-
-TODO: CODEPEN
-
 ## Embedding a font file
 
-To use custom fonts not installed on users' devices, you can embed font files directly into your CSS using the `@font-face` rule.
-
-### Using `@font-face`
-
-The `@font-face` rule allows you to define a custom font by specifying its name and pointing to the font file's URL:
+To use custom fonts not installed on users' devices, you can embed font files directly into your CSS using the `@font-face` rule. This rule allows you to define a custom font by specifying its name and pointing to the font file's URL:
 
 ```css
 @font-face {
@@ -78,7 +54,7 @@ The `@font-face` rule allows you to define a custom font by specifying its name 
 }
 ```
 
-After defining the font, you can apply it like any other font:
+For this to work, you have to include the font file within your site. After exporting it and adding it to your site folder, you can apply it like any other font:
 
 ```css
 body {
@@ -97,13 +73,7 @@ Common font formats include:
 
 WOFF and WOFF2 are recommended due to their compression and broad browser support.
 
-### Example
-
-Here's a practical example of embedding a custom font:
-
-TODO: CODEPEN
-
-## Referencing a font file on the internet
+## Referencing a font file online
 
 Instead of hosting font files yourself, you can reference fonts provided by online services like Google Fonts or Adobe Fonts.
 
@@ -125,6 +95,8 @@ body {
 }
 ```
 
+Google sometimes changes how they allow you to access the font. If you're ever unsure, check out their [own documentation](https://fonts.google.com/).
+
 ### Adobe Fonts
 
 Adobe Fonts requires an Adobe Creative Cloud subscription. After selecting fonts, Adobe provides code to include in your HTML:
@@ -137,32 +109,16 @@ Adobe Fonts requires an Adobe Creative Cloud subscription. After selecting fonts
 
 ### Advantages of using online fonts
 
-- Ease of use: Simple implementation without hosting font files.
-- Performance: Fonts are served from optimized CDNs.
-- Variety: Access to a large collection of fonts.
+- Ease of use: Simple implementation without hosting font files
+- Variety: Access to a large collection of fonts
+- Performance: Fonts are served from optimized CDNs
+- Free: doesn't cost money!
 
 ### Potential issues
 
-- Privacy concerns: Third-party services may track user data.
-- Dependence on external services: If the service is down, fonts may not load.
-
-### Example
-
-Using Google Fonts to include the "Lato" font:
-
-```html
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
-</head>
-```
-
-```css
-h1 {
-  font-family: 'Lato', sans-serif;
-}
-```
-
-TODO: CODEPEN
+- Privacy concerns: Third-party services may track user data
+- Dependence on external services: If the service is down, fonts may not load
+- Changing APIs: occasionally, services will change the way the font is accessed which may cause the font to fail
 
 ## Best practices
 
@@ -179,3 +135,11 @@ p {
 ```
 
 ### Setting reusable font classes
+
+A common practice is to set up font sizes in classes, then apply those to your elements instead of writing the font styles for every individual element:
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="css - font style classes" src="https://codepen.io/jackrieger/embed/bGPPNvJ?default-tab=css%2Cresult&editable=true&theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/bGPPNvJ">
+  css - font style classes</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>

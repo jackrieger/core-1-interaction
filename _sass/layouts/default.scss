@@ -16,3 +16,28 @@
     }
   }
 }
+
+.highlighter-rouge {
+  &.language-css {
+    code {
+      background-color: #fff6c9;
+    }
+
+    pre {
+      background-color: #fff6c9;
+      border-left: solid 2px orange;
+    }
+  }
+
+  &.language-html {
+    // same thing but blue
+    code {
+      background-color: #c9f7ff;
+    }
+
+    pre {
+      background-color: #c9f7ff;
+      border-left: solid 2px blue;
+    }
+  }
+}

@@ -41,8 +41,8 @@
       </li>
     
       <li class="on-page-nav__item">
-        <a class="on-page-nav__link" href="#referencing-a-font-file-on-the-internet">
-          Referencing a font file on the internet
+        <a class="on-page-nav__link" href="#referencing-a-font-file-online">
+          Referencing a font file online
         </a>
       </li>
     
@@ -97,32 +97,9 @@
 
 <p>In this example, the browser tries to use “Helvetica Neue” first. If it’s not available, it falls back to Arial, and finally to the default sans-serif font of the user’s system.</p>
 
-<h3 id="example">Example</h3>
-
-<p>Here’s how you might apply web-safe fonts to different elements:</p>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">p</span> <span class="p">{</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">,</span> <span class="n">Helvetica</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">code</span> <span class="p">{</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">"Courier New"</span><span class="p">,</span> <span class="n">Courier</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>TODO: CODEPEN</p>
-
 <h2 id="embedding-a-font-file">Embedding a font file</h2>
 
-<p>To use custom fonts not installed on users’ devices, you can embed font files directly into your CSS using the <code class="language-plaintext highlighter-rouge">@font-face</code> rule.</p>
-
-<h3 id="using-font-face">Using <code class="language-plaintext highlighter-rouge">@font-face</code></h3>
-
-<p>The <code class="language-plaintext highlighter-rouge">@font-face</code> rule allows you to define a custom font by specifying its name and pointing to the font file’s URL:</p>
+<p>To use custom fonts not installed on users’ devices, you can embed font files directly into your CSS using the <code class="language-plaintext highlighter-rouge">@font-face</code> rule. This rule allows you to define a custom font by specifying its name and pointing to the font file’s URL:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@font-face</span> <span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">;</span>
@@ -133,7 +110,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>After defining the font, you can apply it like any other font:</p>
+<p>For this to work, you have to include the font file within your site. After exporting it and adding it to your site folder, you can apply it like any other font:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'MyCustomFont'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
@@ -153,13 +130,7 @@
 
 <p>WOFF and WOFF2 are recommended due to their compression and broad browser support.</p>
 
-<h3 id="example-1">Example</h3>
-
-<p>Here’s a practical example of embedding a custom font:</p>
-
-<p>TODO: CODEPEN</p>
-
-<h2 id="referencing-a-font-file-on-the-internet">Referencing a font file on the internet</h2>
+<h2 id="referencing-a-font-file-online">Referencing a font file online</h2>
 
 <p>Instead of hosting font files yourself, you can reference fonts provided by online services like Google Fonts or Adobe Fonts.</p>
 
@@ -179,6 +150,8 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
+<p>Google sometimes changes how they allow you to access the font. If you’re ever unsure, check out their <a href="https://fonts.google.com/">own documentation</a>.</p>
+
 <h3 id="adobe-fonts">Adobe Fonts</h3>
 
 <p>Adobe Fonts requires an Adobe Creative Cloud subscription. After selecting fonts, Adobe provides code to include in your HTML:</p>
@@ -191,33 +164,19 @@
 <h3 id="advantages-of-using-online-fonts">Advantages of using online fonts</h3>
 
 <ul>
-  <li>Ease of use: Simple implementation without hosting font files.</li>
-  <li>Performance: Fonts are served from optimized CDNs.</li>
-  <li>Variety: Access to a large collection of fonts.</li>
+  <li>Ease of use: Simple implementation without hosting font files</li>
+  <li>Variety: Access to a large collection of fonts</li>
+  <li>Performance: Fonts are served from optimized CDNs</li>
+  <li>Free: doesn’t cost money!</li>
 </ul>
 
 <h3 id="potential-issues">Potential issues</h3>
 
 <ul>
-  <li>Privacy concerns: Third-party services may track user data.</li>
-  <li>Dependence on external services: If the service is down, fonts may not load.</li>
+  <li>Privacy concerns: Third-party services may track user data</li>
+  <li>Dependence on external services: If the service is down, fonts may not load</li>
+  <li>Changing APIs: occasionally, services will change the way the font is accessed which may cause the font to fail</li>
 </ul>
-
-<h3 id="example-2">Example</h3>
-
-<p>Using Google Fonts to include the “Lato” font:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-</code></pre></div></div>
-
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
-  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Lato'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>TODO: CODEPEN</p>
 
 <h2 id="best-practices">Best practices</h2>
 
@@ -233,6 +192,14 @@
 </code></pre></div></div>
 
 <h3 id="setting-reusable-font-classes">Setting reusable font classes</h3>
+
+<p>A common practice is to set up font sizes in classes, then apply those to your elements instead of writing the font styles for every individual element:</p>
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="css - font style classes" src="https://codepen.io/jackrieger/embed/bGPPNvJ?default-tab=css%2Cresult&amp;editable=true&amp;theme-id=48523" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/jackrieger/pen/bGPPNvJ">
+  css - font style classes</a> by Jack Rieger (<a href="https://codepen.io/jackrieger">@jackrieger</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
 
     </main>
 
