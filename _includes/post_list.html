@@ -1,8 +1,21 @@
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
     <li class="post-list__item">
       <a class="post-list__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="post-symbol" data-symbols='["➪", "➫", "➬", "✏", "✑"]'></span>
       <span class="post-list__date">{{ post.date | date: "%B %e" }}</span>
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const symbolsElements = document.querySelectorAll(".post-symbol");
+
+    symbolsElements.forEach((element) => {
+      const symbols = JSON.parse(element.getAttribute("data-symbols"));
+      const randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+      element.textContent = randomSymbol;
+    });
+  });
+</script>
