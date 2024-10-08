@@ -9,3 +9,4 @@ Idea to have `main` as the template, while branches can be spun off (and served 
 ## Commands
 
 Serve the site with local config to avoid URL issues: `jekyll serve --config _config.dev.yml`
+> After running this, you will need to rebuild using production settings: `jekyll build`

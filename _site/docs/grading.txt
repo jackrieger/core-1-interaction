@@ -12,7 +12,7 @@ Is the idea progressing the original collection? 2.5/2.5
 
 This week's challenge was meant to include collage which is front and center in this sketch. I notice the theme through the photography, borders, and type all layered on top of one another. Using a thick, colored outline helps unify the collection and making all the photos black and white also helps make them feel like they're part of the same collection.
 
-One consideration is how the type fits into this story — it would require javascript to hover over the date and have the articles of clothing you wore that day light up, but that could be something to consider in the future. In the interim, a system where the date is nested underneath each item of clothing could help make the whole page feel like a collage and also provide an immediate piece of information
+One consideration is how the type fits into this story  –  it would require javascript to hover over the date and have the articles of clothing you wore that day light up, but that could be something to consider in the future. In the interim, a system where the date is nested underneath each item of clothing could help make the whole page feel like a collage and also provide an immediate piece of information
 
 ---
 

@@ -39,7 +39,7 @@ HTML consists of a [range of elements](https://developer.mozilla.org/en-US/docs
 
 The `<html>` element contains all elements of the page, the `<head>` element contains the title, and the body contains `<h1>` and `<p>`.
 
-We call these [*semantic* elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)—which is saying that they give their contents a *meaning* or a *role*. These *roles* are then interpreted by your browser (Chrome, Safari, Firefox, etc.) when it loads the file, to ultimately display the page. We call this *parsing* the document.
+We call these [*semantic* elements](https://developer.mozilla.org/en-US/docs/Glossary/Semantics) – which is saying that they give their contents a *meaning* or a *role*. These *roles* are then interpreted by your browser (Chrome, Safari, Firefox, etc.) when it loads the file, to ultimately display the page. We call this *parsing* the document.
 
 *In our example, here is what we’ve told the computer:*
 
@@ -51,14 +51,14 @@ We call these [*semantic* elements](https://developer.mozilla.org/en-US/docs/Glo
   The root element of an HTML page, containing all the content.
 
 - `<head>` \
-  The *meta* information about the HTML page—like its title, default language, [scripts](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script), and [stylesheets](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style). \
+  The *meta* information about the HTML page – like its title, default language, [scripts](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script), and [stylesheets](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style). \
   *Nothing in this element is visible on the page itself.*
 
 - `<title>` \
-  Specifies a [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) for the page—which is shown in the browser’s tab, and when it is shared.
+  Specifies a [title](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) for the page – which is shown in the browser’s tab, and when it is shared.
 
 - `<body>` \
-  Defines the document's body—the container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+  Defines the document's body – the container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
 
 - `<h1>` \
   Defines a primary/first-level heading.
@@ -127,7 +127,7 @@ All HTML elements can have [attributes](https://developer.mozilla.org/en-US/docs
 <img src="example.jpg" alt="A description of the image.">
 ```
 
-- The `id` specifies a singular, unique element on a page—for CSS targeting and anchor (scroll, “jump”) links, prepended with `#`.
+- The `id` specifies a singular, unique element on a page – for CSS targeting and anchor (scroll, “jump”) links, prepended with `#`.
 
 ```html
 <h2 id="a-heading-element">A heading element</h2>
@@ -144,7 +144,7 @@ All HTML elements can have [attributes](https://developer.mozilla.org/en-US/docs
 
 ## Block elements
 
-[Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) always start on a new line, and take up the full width available—stretching out to the left and right of their parent/container. They stack on top of each other. Importantly, block elements can have a top and bottom margin, unlike inline elements.
+[Block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) always start on a new line, and take up the full width available – stretching out to the left and right of their parent/container. They stack on top of each other. Importantly, block elements can have a top and bottom margin, unlike inline elements.
 
 Earlier, we talked about area-defining elements. All of these area-defining elements are also block elements:
 
