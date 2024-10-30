@@ -6,6 +6,10 @@ Idea to have `main` as the template, while branches can be spun off (and served 
 - issue is the URL when using github pages. you don't want jackrieger.github.io/teaching as the class site
 - if you have a separate domain you could do the original idea, but maybe not worth it. keep separate repos
 
+HTML - green
+CSS - yellow
+JS - blue
+
 ## Commands
 
 Serve the site with local config to avoid URL issues: `jekyll serve --config _config.dev.yml`
