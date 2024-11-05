@@ -18,6 +18,17 @@
 }
 
 .highlighter-rouge {
+  &.language-html {
+    code {
+      background-color: #c9ffcc;
+    }
+
+    pre {
+      background-color: #c9ffd7;
+      border-left: solid 2px #23ff5e;
+    }
+  }
+
   &.language-css {
     code {
       background-color: #fff6c9;
@@ -25,19 +36,18 @@
 
     pre {
       background-color: #fff6c9;
-      border-left: solid 2px orange;
+      border-left: solid 2px #ffe149;
     }
   }
 
-  &.language-html {
-    // same thing but blue
+  &.language-js {
     code {
       background-color: #c9f7ff;
     }
 
     pre {
       background-color: #c9f7ff;
-      border-left: solid 2px blue;
+      border-left: solid 2px #1fddff;
     }
   }
 }
