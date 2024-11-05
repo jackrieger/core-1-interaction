@@ -1,6 +1,7 @@
 ## Notepad
 
 Idea to have `main` as the template, while branches can be spun off (and served as sites) for separate classes.
+
 - overridden 8/26 for convenience
 - maybe "main" is the _current_ class
 - issue is the URL when using github pages. you don't want jackrieger.github.io/teaching as the class site
@@ -12,9 +13,18 @@ JS - blue
 
 ## Teaching activities
 
-Lecture
-Live demo
-Ask class question and code what they say
+lecture
+live demo of a single task
+q&a style demo of multiple questions
+ask class question and code what they say
+
+## Peer-to-peer activities
+
+class critique
+peer-to-peer review
+group projects or activities
+
+## Solo activities
 
 ## Commands
 
