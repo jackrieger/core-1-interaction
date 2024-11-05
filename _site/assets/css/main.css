@@ -113,7 +113,7 @@ meter {
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: #c0c7d1;
   font-family: Arial, sans-serif;
   letter-spacing: 0.015em;
   line-height: 1.3;
@@ -134,7 +134,7 @@ a:hover {
 
 blockquote {
   background-color: #f9f9f9;
-  border-left: 0.25rem solid #aaaaaa;
+  border-left: 0.25rem solid #c0c7d1;
   color: #555555;
   margin-bottom: 1.5rem;
   margin-left: 0;
@@ -284,19 +284,26 @@ ul ul {
   margin-top: unset;
 }
 
+.highlighter-rouge.language-html code {
+  background-color: #c9ffcc;
+}
+.highlighter-rouge.language-html pre {
+  background-color: #c9ffd7;
+  border-left: solid 2px #23ff5e;
+}
 .highlighter-rouge.language-css code {
   background-color: #fff6c9;
 }
 .highlighter-rouge.language-css pre {
   background-color: #fff6c9;
-  border-left: solid 2px orange;
+  border-left: solid 2px #ffe149;
 }
-.highlighter-rouge.language-html code {
+.highlighter-rouge.language-js code {
   background-color: #c9f7ff;
 }
-.highlighter-rouge.language-html pre {
+.highlighter-rouge.language-js pre {
   background-color: #c9f7ff;
-  border-left: solid 2px blue;
+  border-left: solid 2px #1fddff;
 }
 
 body.home {

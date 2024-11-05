@@ -1,0 +1,67 @@
+{
+  "bookshelf": [
+    {
+      "shelf": "Fiction",
+      "books": [
+        {
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "color": "blue",
+          "page_count": 281
+        },
+        {
+          "title": "1984",
+          "author": "George Orwell",
+          "color": "gray",
+          "page_count": 328
+        },
+        {
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "color": "green",
+          "page_count": 180
+        }
+      ]
+    },
+    {
+      "shelf": "Non-Fiction",
+      "books": [
+        {
+          "title": "Sapiens: A Brief History of Humankind",
+          "author": "Yuval Noah Harari",
+          "color": "white",
+          "page_count": 498
+        },
+        {
+          "title": "Educated",
+          "author": "Tara Westover",
+          "color": "red",
+          "page_count": 352
+        }
+      ]
+    },
+    {
+      "shelf": "Science Fiction",
+      "books": [
+        {
+          "title": "Dune",
+          "author": "Frank Herbert",
+          "color": "tan",
+          "page_count": 412
+        },
+        {
+          "title": "Neuromancer",
+          "author": "William Gibson",
+          "color": "black",
+          "page_count": 271
+        },
+        {
+          "title": "Snow Crash",
+          "author": "Neal Stephenson",
+          "color": "purple",
+          "page_count": 480
+        }
+      ]
+    }
+  ]
+}
