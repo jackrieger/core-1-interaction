@@ -10,6 +10,12 @@ HTML - green
 CSS - yellow
 JS - blue
 
+## Teaching activities
+
+Lecture
+Live demo
+Ask class question and code what they say
+
 ## Commands
 
 Serve the site with local config to avoid URL issues: `jekyll serve --config _config.dev.yml`
